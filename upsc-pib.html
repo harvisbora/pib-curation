@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubu's IFS Times — UPSC Daily Curation</title>
+    <!-- Tailwind CSS for lightweight layout engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif headings) and Inter (Clean editorial body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fcfbf9; /* Warm off-white broadsheet paper tone */
+        }
+    </style>
+</head>
+<body class="font-sans text-neutral-950 antialiased selection:bg-amber-100">
+
+    <!-- BROADSHEET HEADER BLOCK (Indian Express Style) -->
+    <header class="max-w-6xl mx-auto px-4 pt-6 pb-2 border-b-4 border-black">
+        <div class="flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest font-bold text-neutral-600 mb-2">
+            <div>UPSC GS-II & GS-III CIVILS BRIEFING</div>
+            <div id="current-date">Friday, June 5, 2026</div>
+            <div class="text-red-700">Journalism of Courage in Civils Prep</div>
+        </div>
+
+        <div class="text-center py-6 border-t border-b border-neutral-300 my-2">
+            <h1 class="font-serif text-5xl md:text-7xl font-black tracking-tight select-none">
+                Bubu's IFS Times
+            </h1>
+            <p class="font-serif text-sm tracking-widest text-neutral-700 mt-2 italic uppercase">
+                India's Tech, Digital Economy & Security Broadcaster
+            </p>
+        </div>
+
+        <div class="flex justify-between items-center py-1.5 text-xs font-bold uppercase tracking-wider text-neutral-800 border-b border-neutral-300">
+            <div>Vol. IV &bull; No. 154</div>
+            <div class="hidden sm:block">PIB DELHI CURATION ARCHIVE</div>
+            <div class="text-red-700">Static Single-Edition Page</div>
+        </div>
+    </header>
+
+    <!-- MAIN NEWS CONTENT (Single Scrollable Broad Sheet) -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- INTRO EDITORIAL PILL -->
+        <div class="bg-neutral-900 text-white p-4 mb-8 rounded-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <h2 class="font-serif text-lg font-bold">May 2026 Technical & Security Dossier</h2>
+                <p class="text-xs text-neutral-300">All 13 key technology, digital economy, and national security PIB updates structured for civil services aspirants.</p>
+            </div>
+            <button onclick="toggleAllUPSC()" class="bg-red-700 hover:bg-red-800 text-xs font-bold uppercase tracking-wider px-3 py-1.5 transition whitespace-nowrap">
+                Toggle All UPSC Pointers
+            </button>
+        </div>
+
+        <!-- 1-Column Sequential Layout -->
+        <section id="news-feed" class="space-y-12">
+            <!-- Articles loaded statically via JavaScript array loop directly into the DOM -->
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-neutral-950 text-white mt-16 py-12 border-t-4 border-red-700">
+        <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
+            <h2 class="font-serif text-3xl font-extrabold italic text-neutral-100">Bubu's IFS Times</h2>
+            <p class="text-xs text-neutral-400 max-w-lg mx-auto leading-relaxed">
+                A purpose-built study aid synthesizing Press Information Bureau (PIB) updates for direct application in civil services examinations. No proprietary tracking or complex infrastructure required.
+            </p>
+            <div class="pt-4 border-t border-neutral-800 text-neutral-600 text-[10px] uppercase tracking-wider">
+                &copy; 2026 Bubu's IFS Times. All Rights Reserved. For academic use.
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE DATA LAYER -->
+    <script>
+        const articles = [
+            {
+                "id": 1,
+                "category": "Semiconductor",
+                "title": "NITI Aayog Releases 'Future of India’s Semiconductor Industry' 10-Year Roadmap",
+                "pib_source_date": "May 29, 2026",
+                "ministry": "NITI Aayog",
+                "syllabus_mapping": "GS Paper III: Achievements of Indians in science & technology; Indigenization of technology; Industrial Policy.",
+                "why_in_news": "NITI Aayog's Frontier Tech Hub released its first comprehensive 10-year roadmap to transition India from a semiconductor consumer to an indispensable global supply-chain hub by 2035.",
+                "key_highlights": [
+                    "Targets a domestic semiconductor value chain of USD 120–150 Billion by the year 2035.",
+                    "Formulates a five-pillar strategy: talent pipeline expansion, raw material localization, supply-chain resilience, cooperative R&D, and demand creation.",
+                    "Addresses geopolitical realignments to capture 'trusted capacity' across global electronics networks."
+                ],
+                "prelims_focus": "The India Semiconductor Mission (ISM) was launched in 2021 with a ₹76,000 crore outlay under MeitY. This roadmap integrates central and state-level incentives under the upcoming 'ISM 2.0' policy iteration.",
+                "mains_focus": "Critically evaluate the multi-faceted challenges India faces in setting up high-tech semiconductor fabs, specifically analyzing critical raw materials, supply-chain bottlenecks, and high capital expenditure requirements."
+            },
+            {
+                "id": 2,
+                "category": "Semiconductor",
+                "title": "India Semiconductor Mission Launches Centralized 'Investors Support' Digital Portal",
+                "pib_source_date": "May 26, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper III: Indian Economy and issues relating to planning, mobilization of resources, growth, development and employment.",
+                "why_in_news": "MeitY's India Semiconductor Mission launched an integrated single-window 'Investors Support' portal (ism.gov.in/investment) to facilitate smooth entry and query resolution for global chip design and fabrication units.",
+                "key_highlights": [
+                    "Compiles central policy guidelines, state-level land/utility incentives, and compliance structures under one digital umbrella.",
+                    "Establishes a dedicated grievance redressal system with assigned nodal officers to handle investor escalations.",
+                    "Acts as an ease-of-doing-business benchmark to attract FDI in compound semiconductors, silicon fabs, and OSAT operations."
+                ],
+                "prelims_focus": "The portal provides access to the Semicon India Programme. This scheme provides up to 50% fiscal support of project cost on equal footing for silicon semiconductor fabs, display fabs, and compound semiconductor/OSAT facilities.",
+                "mains_focus": "Does administrative single-window clearance solve foundational infrastructure bottlenecks? Discuss the need for policy continuity and physical infrastructure support to build deep industrial ecosystems like semiconductors."
+            },
+            {
+                "id": 3,
+                "category": "Science & Tech",
+                "title": "MeitY and ISB Host Governance Summit 2026 to Scale 'Inclusive AI for Viksit Bharat'",
+                "pib_source_date": "May 25, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper II: Important aspects of governance, transparency and accountability, e-governance- applications, models, successes, limitations, and potential.",
+                "why_in_news": "In collaboration with the Bharti Institute of Public Policy at the Indian School of Business (ISB), MeitY hosted the fourth edition of the Governance Summit to discuss AI-powered public services, jobs, and safety safeguards.",
+                "key_highlights": [
+                    "Emphasized public-sector AI models for expanding access to healthcare, education, localized agriculture, and digital commerce via ONDC.",
+                    "Discussed mitigation strategies for technological biases and safeguarding marginalized populations from systemic digital exclusion.",
+                    "Pushed for standardizing AI frameworks for last-mile public service delivery at the Gram Panchayat level."
+                ],
+                "prelims_focus": "The summit is a critical part of the IndiaAI Mission. This mission operates on several key pillars: IndiaAI Compute Capacity (building a supercomputing ecosystem with 10,000+ GPUs), IndiaAI Datasets Platform, and IndiaAI FutureLabs.",
+                "mains_focus": "With global concern surrounding the impact of AI on jobs, analyze India's unique position to leverage AI as an inclusive developmental engine rather than a labor-displacing threat."
+            },
+            {
+                "id": 4,
+                "category": "Science & Tech",
+                "title": "India Chairs the Second Meeting of the BRICS Working Group for Cooperation in ICTs",
+                "pib_source_date": "May 22, 2026",
+                "ministry": "Ministry of Communications / DoT",
+                "syllabus_mapping": "GS Paper II: Bilateral, regional and global groupings and agreements involving India and/or affecting India’s interests.",
+                "why_in_news": "Under India's BRICS Presidency 2026, the Department of Telecommunications (DoT) successfully headed the second BRICS working group meeting on ICT cooperation in virtual mode.",
+                "key_highlights": [
+                    "Proposed the establishment of a specialized 'BRICS Capacity Building Centre' to foster collaborative technical education across member states.",
+                    "Addressed digital public infrastructure (DPI) sharing, future network technologies (5G/6G), and closing the digital divide in the Global South.",
+                    "Formulated cooperative frameworks to enhance cybersecurity resilience and trusted supply chains among emerging economies."
+                ],
+                "prelims_focus": "India's Digital Public Infrastructure (DPI) framework, commonly referred to as 'India Stack' (containing UPI, Aadhaar, DigiLocker), is a primary model discussed for cross-border replication under the BRICS ICT track.",
+                "mains_focus": "Examine how India can utilize multilateral blocks like BRICS to position itself as a global leader in defining digital public infrastructure standards and bridging the technology divide."
+            },
+            {
+                "id": 5,
+                "category": "Cybersecurity",
+                "title": "MeitY Convenes National Consultative Workshop to Strengthen Cybersecurity Frameworks for State Data",
+                "pib_source_date": "May 16, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper III: Basics of cyber security; Security challenges and their management.",
+                "why_in_news": "A high-level workshop was convened by MeitY, in partnership with NeGD and CERT-In, to finalize a standardized national cybersecurity policy framework for state government databases.",
+                "key_highlights": [
+                    "Highlighted state-level cybersecurity preparedness as a mandatory legal obligation under the Digital Personal Data Protection (DPDP) Act, 2023.",
+                    "Focused on building robust standard operating procedures across all 36 state-level and UT data repositories hosting critical citizen records.",
+                    "Stressed that cybersecurity resilience is an institutional commitment requiring regular audits, rather than a mere capital investment."
+                ],
+                "prelims_focus": "The DPDP Act, 2023, will become fully enforceable on May 13, 2027. It defines personal data breaches and empowers the Data Protection Board of India (DPBI) to enforce compliance and penalize default data fiduciaries.",
+                "mains_focus": "State government databases are often soft targets for ransomware. Critically analyze the structural constraints faced by state administrations in securing localized public databases and the role of the DPDP Act in enforcing accountability."
+            },
+            {
+                "id": 6,
+                "category": "Cybersecurity",
+                "title": "DoT Mumbai LSA Highlights Regulatory Advancements and Sanchar Saathi Success Metrics",
+                "pib_source_date": "May 15, 2026",
+                "ministry": "Ministry of Communications",
+                "syllabus_mapping": "GS Paper III: Challenges to internal security through communication networks, role of media and social networking sites in internal security challenges.",
+                "why_in_news": "On the occasion of World Telecommunication Day, the DoT Mumbai LSA briefed the media on the rollout of the Telecommunications Act, 2023, and key performance metrics of mobile security initiatives.",
+                "key_highlights": [
+                    "Highlighted the Sanchar Saathi platform’s role in tracing lost handsets and disconnecting over 3.4 crore suspicious connections nationwide.",
+                    "Reported the blocking of 2.27 lakh fraudulent mobile devices and deactivating over 16.97 lakh WhatsApp accounts associated with cybercrime.",
+                    "Detailed the implementation of Telecommunications (Telecom Cyber Security) Rules and Maharashtra's centralized Right of Way (RoW) portal."
+                ],
+                "prelims_focus": "The Sanchar Saathi portal is a citizen-centric initiative of the Department of Telecommunications. Its key modules include TAFCOP (to check registered connections) and CEIR (Central Equipment Identity Register, to block/trace lost mobile phones).",
+                "mains_focus": "Evaluate how digital safety portals like Sanchar Saathi can strike a balance between mass surveillance concerns and the urgent national security need to control digital financial frauds."
+            },
+            {
+                "id": 7,
+                "category": "Startups & Space",
+                "title": "India Secures Global Support to Host ITU Plenipotentiary Conference (PP-2030)",
+                "pib_source_date": "May 14, 2026",
+                "ministry": "Department of Telecommunications",
+                "syllabus_mapping": "GS Paper II: Important International institutions, agencies and fora - their structure, mandate.",
+                "why_in_news": "At the ITU Council 2026 meeting in Geneva, Switzerland, the member nations accepted India's bid to host the prestigious ITU Plenipotentiary Conference (PP-2030) in India.",
+                "key_highlights": [
+                    "Represents a major geopolitical milestone, positioning India as a leading voice in setting global telecommunication and digital standardizations.",
+                    "India presented key candidatures for the ITU Council re-election and the Director of the Radiocommunications Bureau (BR).",
+                    "Strengthened international digital cooperation through 15 bilateral meetings with member nations on global telecom policy."
+                ],
+                "prelims_focus": "The International Telecommunication Union (ITU) is a specialized agency of the United Nations responsible for matters related to information and communication technologies. The Plenipotentiary Conference is the top policy-making body of the ITU, held once every four years.",
+                "mains_focus": "Discuss the strategic advantages for India in hosting global telecom standard-setting bodies like the ITU. How does this enhance India's domestic tech-manufacturing ecosystem and global digital diplomacy?"
+            },
+            {
+                "id": 8,
+                "category": "Startups & Space",
+                "title": "SAMEER and ISRO’s ISTRAC Sign MoU to Develop Indigenous Deep Space Telemetry Systems",
+                "pib_source_date": "May 13, 2026",
+                "ministry": "Ministry of Electronics & IT / Department of Space",
+                "syllabus_mapping": "GS Paper III: Awareness in the fields of Space, Computers, Robotics; Indigenization of technology and developing new technology.",
+                "why_in_news": "ISRO Telemetry, Tracking and Command Network (ISTRAC) and SAMEER signed an MoU to design and build high-power telecom transmitter modules using domestic semiconductor technologies.",
+                "key_highlights": [
+                    "Aimed at developing indigenous high-power Gallium Nitride (GaN) semiconductor-based amplifier modules for ISRO’s Deep Space Network.",
+                    "Enhances signal transmission strength in the X-Band frequency, critical for long-distance space observation missions.",
+                    "Replaces dependence on foreign OEMs (Original Equipment Manufacturers) by leveraging indigenously built power modules from GATEC/DRDO."
+                ],
+                "prelims_focus": "SAMEER (Society for Applied Microwave Electronics Engineering & Research) is an autonomous R&D institution under MeitY. GATEC (Gallium Arsenide Enabling Technology Centre) is a DRDO facility specializing in wide-bandgap semiconductor development.",
+                "mains_focus": "Highlight the developmental interface between the electronics sector and deep space exploratory capabilities. How does indigenizing component-level technology like GaN chips secure India's strategic autonomy in space research?"
+            },
+            {
+                "id": 9,
+                "category": "Science & Tech",
+                "title": "IndiaAI Partners with Karya to Develop Inclusive High-Quality Language Datasets",
+                "pib_source_date": "May 13, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper III: Science and Technology- developments and their applications and effects in everyday life.",
+                "why_in_news": "The IndiaAI Mission signed an MoU with social enterprise Karya to curate, evaluate, and share high-quality regional language and multimodal datasets to build representative AI systems.",
+                "key_highlights": [
+                    "Aimed at curating diverse regional language databases under the 'AIKosh' open data infrastructure scheme.",
+                    "Focuses on developing standard evaluation frameworks and validation protocols for diverse non-English Indian dialects.",
+                    "Supports rural livelihood creation by paying fair wages to local communities participating in data labeling and audio annotation."
+                ],
+                "prelims_focus": "The IndiaAI Mission is a division under the Digital India Corporation. The partnership leverages 'Karya', a non-profit startup specializing in ethical data generation for Indian languages.",
+                "mains_focus": "Language barriers remain a core obstacle to technology diffusion in rural India. Examine the role of open-source regional dataset initiatives (like AIKosh) in creating truly democratic e-governance structures."
+            },
+            {
+                "id": 10,
+                "category": "Startups & Space",
+                "title": "MeitY Launches 'IP Catalyst' and Unified cipie.in Portal to Scale IPR Commercialization",
+                "pib_source_date": "May 13, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper III: Intellectual Property Rights (IPR) issues; Mobilization of resources; Indigenization.",
+                "why_in_news": "At a national conference, MeitY launched the 'IP Catalyst' initiative and its digital portal to provide comprehensive digital lifecycle support for intellectual property creation and commercialization.",
+                "key_highlights": [
+                    "Designed to fund domestic and international patent filings for electronics/IT startups, MSMEs, and academia.",
+                    "Operates as an IP market-clearing hub, connecting patented technologies from public R&D labs with private sector manufacturers.",
+                    "Provides automated prior-art searches, IP valuation tools, and technology-readiness assessments to bridge the lab-to-market gap."
+                ],
+                "prelims_focus": "The IP Catalyst project is implemented by the Centre for Development of Advanced Computing (C-DAC) in Pune with direct fiscal backing from MeitY under the R&D commercialization scheme.",
+                "mains_focus": "India has registered a massive surge in patent filings, yet commercialization remains low. Analyze how portals like IP Catalyst address structural market failures in technology transfer from academic labs to commercial industries."
+            },
+            {
+                "id": 11,
+                "category": "Startups & Space",
+                "title": "Sikkim IT Department and NIELIT Gangtok Sign MoU to Establish State’s First AI Centre of Excellence",
+                "pib_source_date": "May 8, 2026",
+                "ministry": "Ministry of Electronics & IT",
+                "syllabus_mapping": "GS Paper III: Science and Technology- developments and their applications; Regional development.",
+                "why_in_news": "Under the IndiaAI Mission, Sikkim's Department of IT and NIELIT Gangtok signed an agreement to set up a dedicated Artificial Intelligence Centre of Excellence (AI-CoE) to build local tech capacity.",
+                "key_highlights": [
+                    "Aims to foster regional AI-driven innovation, capacity building, and digital skilling programs for youth, students, and government officials.",
+                    "Provides local startups with access to sandboxed compute environments and mentorship under national framework schemes.",
+                    "Focuses on developing region-specific AI applications, particularly for landslide prediction, agriculture, and high-altitude logistics."
+                ],
+                "prelims_focus": "NIELIT (National Institute of Electronics & Information Technology) is an autonomous scientific society under MeitY. The project is aligned with the 'IndiaAI FutureSkills' initiative to democratize tech education in remote and hilly terrains."
+                ,"mains_focus": "Examine the role of localized tech centers of excellence in addressing geographical disparities in industrial growth. How can deep-tech skills training in North-Eastern states stem brain drain and boost localized entrepreneurship?"
+            },
+            {
+                "id": 12,
+                "category": "Cybersecurity",
+                "title": "DoT and NDMA Launch Nationwide Cell Broadcast System (CBS) for Disaster Response",
+                "pib_source_date": "May 2, 2026",
+                "ministry": "Ministry of Communications",
+                "syllabus_mapping": "GS Paper III: Disaster and disaster management; Basics of cyber security; Role of media and social networking sites.",
+                "why_in_news": "The Ministry of Communications officially launched the indigenously developed Cell Broadcast System (CBS) to enable swift, geo-targeted dissemination of emergency disaster warnings.",
+                "key_highlights": [
+                    "Enables near-instantaneous broadcast of critical alert messages (e.g., cyclones, gas leaks, earthquakes) to all active mobile devices in a targeted zone, with zero network congestion delay.",
+                    "Leverages Cell Broadcast technology to bypass normal SMS queuing protocols, displaying loud alerts even on silent mobile phones.",
+                    "Developed natively by C-DOT under guidance from NDMA, avoiding reliance on foreign technology frameworks."
+                ],
+                "prelims_focus": "The Integrated Alert System (SACHET) was developed by C-DOT (Centre for Development of Telematics) under the Common Alerting Protocol (CAP) standard recommended by the International Telecommunication Union (ITU).",
+                "mains_focus": "Disaster management is transitioning from reactive recovery to proactive risk-mitigation. Evaluate the role of real-time communication technologies in minimizing casualty rates during extreme climate events."
+            },
+            {
+                "id": 13,
+                "category": "Semiconductor",
+                "title": "Union Cabinet Approves Two New Semiconductor Proposals in Gujarat Worth ₹3,936 Crore",
+                "pib_source_date": "May 5, 2026",
+                "ministry": "Union Cabinet",
+                "syllabus_mapping": "GS Paper III: Infrastructure: Energy, Ports, Roads, Airports, Railways etc.; Indigenization of technology.",
+                "why_in_news": "The Union Cabinet approved two landmark proposals under the India Semiconductor Mission (ISM), adding a specialized display facility and an assembly unit to India's high-tech manufacturing portfolio.",
+                "key_highlights": [
+                    "Approves India's first commercial-scale Mini/Micro-LED display fab by Crystal Matrix Limited in Dholera, Gujarat, involving GaN (Gallium Nitride) technologies.",
+                    "Approves an Outsourced Semiconductor Assembly and Test (OSAT) packaging unit by Suchi Semicon in Surat, Gujarat.",
+                    "Extends the total approved commercial projects under the ISM framework to 12, driving domestic supply-chain clustering."
+                ],
+                "prelims_focus": "The semiconductor manufacturing value chain includes Fab fabrication (front-end) and OSAT/ATMP (back-end packaging and testing). GaN (Gallium Nitride) is a wide-bandgap semiconductor used heavily in high-efficiency power electronics and advanced displays.",
+                "mains_focus": "Explain the geopolitical and economic significance of diversifying the semiconductor value chain beyond silicon. How do localized OSAT and specialized display fabs enhance India's supply-chain resilience?"
+            }
+        ];
+
+        function renderAllArticles() {
+            const container = document.getElementById('news-feed');
+            container.innerHTML = '';
+
+            articles.forEach((article) => {
+                const articleEl = document.createElement('article');
+                articleEl.className = "pb-10 border-b border-neutral-300 last:border-0";
+                
+                articleEl.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2 text-xs">
+                        <span class="font-bold text-red-700 tracking-wider uppercase text-[10px]">
+                            ${article.category}
+                        </span>
+                        <div class="text-neutral-500 font-medium">
+                            ${article.ministry} &bull; ${article.pib_source_date}
+                        </div>
+                    </div>
+
+                    <h3 class="font-serif text-2xl md:text-3xl font-bold text-neutral-950 mb-3 tracking-tight leading-tight hover:text-red-700 transition">
+                        ${article.title}
+                    </h3>
+
+                    <p class="text-neutral-700 text-sm md:text-base leading-relaxed mb-4">
+                        ${article.why_in_news}
+                    </p>
+
+                    <!-- UPSC Exam Pointers Control Button -->
+                    <button onclick="toggleUPSCSection(${article.id})" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-neutral-900 border-b-2 border-black hover:text-red-700 hover:border-red-700 pb-0.5 transition select-none">
+                        <span>🔍 Toggle UPSC Exam Pointers</span>
+                        <svg id="arrow-${article.id}" class="w-3 h-3 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+
+                    <!-- UPSC DETAILED NOTEBOOK LAYER (Visible by default in this basic layout) -->
+                    <div id="upsc-card-${article.id}" class="mt-4 bg-stone-100 border border-neutral-300 rounded-sm p-5 font-sans text-neutral-800 space-y-4 shadow-inner">
+                        <div class="border-b border-neutral-300 pb-2">
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">Syllabus Alignment</span>
+                            <p class="text-xs font-semibold text-neutral-950">${article.syllabus_mapping}</p>
+                        </div>
+
+                        <div>
+                            <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">Key Highlights</span>
+                            <ul class="list-disc list-inside text-xs space-y-1.5 text-neutral-800 mt-1 pl-1">
+                                ${article.key_highlights.map(pt => `<li>${pt}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
+                            <div class="bg-white p-3 rounded-sm border border-neutral-200">
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700 block mb-1">Prelims Spotlight (Facts)</span>
+                                <p class="text-xs text-neutral-800 leading-relaxed">${article.prelims_focus}</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-sm border border-neutral-200">
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500 block mb-1">Mains Perspective (Analysis)</span>
+                                <p class="text-xs text-neutral-800 leading-relaxed italic">"${article.mains_focus}"</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(articleEl);
+            });
+        }
+
+        function toggleUPSCSection(id) {
+            const upscCard = document.getElementById(`upsc-card-${id}`);
+            const arrow = document.getElementById(`arrow-${id}`);
+            if (upscCard.classList.contains('hidden')) {
+                upscCard.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+            } else {
+                upscCard.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+            }
+        }
+
+        let allOpen = true;
+        function toggleAllUPSC() {
+            allOpen = !allOpen;
+            articles.forEach(article => {
+                const upscCard = document.getElementById(`upsc-card-${article.id}`);
+                const arrow = document.getElementById(`arrow-${article.id}`);
+                if (allOpen) {
+                    upscCard.classList.remove('hidden');
+                    arrow.classList.add('rotate-180');
+                } else {
+                    upscCard.classList.add('hidden');
+                    arrow.classList.remove('rotate-180');
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderAllArticles();
+            // Default arrow states to open matching the load configuration
+            articles.forEach(article => {
+                const arrow = document.getElementById(`arrow-${article.id}`);
+                if (arrow) arrow.classList.add('rotate-180');
+            });
+            document.getElementById('current-date').innerText = new Date().toLocaleDateString('en-US', {
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+            });
+        });
+    </script>
+</body>
+</html>
