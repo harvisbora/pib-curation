@@ -1,9 +1,10 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech & Security Dossier</title>
+    <title>Bubu's IFS Times - June 2026 Core Dossier</title>
     <!-- Tailwind CSS for lightweight layout engine -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Playfair Display (Serif headings) and Inter (Clean UI/Body) -->
@@ -29,10 +30,10 @@
 <body class="font-sans text-neutral-950 antialiased selection:bg-amber-100">
 
     <!-- HEADER BLOCK -->
-    <header class="max-w-6xl mx-auto px-4 pt-6 pb-2 border-b-4 border-black">
+    <header class="max-w-7xl mx-auto px-4 pt-6 pb-2 border-b-4 border-black">
         <div class="flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest font-bold text-neutral-600 mb-2">
             <div>UPSC GS-II & GS-III CIVILS BRIEFING</div>
-            <div id="current-date">Sunday, June 7, 2026</div>
+            <div id="current-date">Friday, June 19, 2026</div>
             <div class="text-red-700">Journalism of Courage in Civils Prep</div>
         </div>
 
@@ -46,26 +47,52 @@
         </div>
 
         <div class="flex justify-between items-center py-1.5 text-xs font-bold uppercase tracking-wider text-neutral-800 border-b border-neutral-300">
-            <div>Vol. IV &bull; No. 156</div>
-            <div>PIB DELHI DEEP-DIVE ANALYTICAL EDITION</div>
-            <div class="text-red-700">Interactive Static Page</div>
+            <div>Vol. IV &bull; No. 176</div>
+            <div>EXCLUSIVE JUNE 2026 PIB FULL-SPECTRUM MASTER EDITION</div>
+            <div class="text-red-700">All 45 Portfolios</div>
         </div>
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-7xl mx-auto px-4 py-8">
         
         <!-- INTRO EDITORIAL PILL -->
-        <div class="bg-neutral-900 text-white p-4 mb-8 rounded-sm">
-            <h2 class="font-serif text-lg font-bold">UPSC Core Tech & National Security Dossier (May 2026)</h2>
-            <p class="text-xs text-neutral-300 mt-1">
-                This edition contains comprehensive UPSC-ready study sheets constructed using your exact 16-point analytical framework. Click on the headings inside the article dossiers to study syllabus linkages, value additions, prelims facts, and mock questions.
+        <div class="bg-neutral-900 text-white p-6 mb-8 rounded-sm">
+            <h2 class="font-serif text-xl font-bold">The June 2026 Tech & Strategic Sovereignty Register</h2>
+            <p class="text-xs text-neutral-300 mt-2 leading-relaxed">
+                This database compiles all 45 critical policy developments from June 2026. Use the filter controls to isolate portfolios, search by syllabus keywords, and view dynamically generated UPSC point mappings.
             </p>
         </div>
 
-        <!-- 1-Column Sequential Layout -->
-        <section id="news-feed" class="space-y-16">
-            <!-- Articles loaded statically via JavaScript -->
+        <!-- FILTER & CONTROLS CONTROL DECK -->
+        <div class="bg-stone-100 border border-neutral-300 p-4 mb-8 rounded-sm space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="relative flex-1">
+                    <input type="text" id="search-bar" oninput="filterArticles()" placeholder="Search by title, technology, ministry, or theme..." class="w-full bg-white border border-neutral-300 px-3 py-2 text-sm rounded-sm focus:outline-none focus:ring-1 focus:ring-red-700 font-medium">
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <label class="text-xs font-bold uppercase tracking-wider text-neutral-700">Priority Filter:</label>
+                    <button onclick="togglePriorityFilter('all')" id="pri-all" class="px-3 py-1 text-xs font-bold rounded-sm bg-neutral-950 text-white border border-neutral-950">Show All</button>
+                    <button onclick="togglePriorityFilter('high')" id="pri-high" class="px-3 py-1 text-xs font-bold rounded-sm bg-white text-neutral-700 border border-neutral-300 hover:bg-neutral-50">⭐⭐⭐⭐⭐ Only</button>
+                </div>
+            </div>
+
+            <div class="border-t border-neutral-300 pt-3">
+                <span class="text-xs font-bold uppercase tracking-wider text-neutral-700 block mb-2">Filter by Ministry Portfolio:</span>
+                <div class="flex flex-wrap gap-1.5" id="ministry-filters">
+                    <!-- Dynamic pills generated on startup -->
+                </div>
+            </div>
+            
+            <div class="flex justify-between items-center text-xs text-neutral-500 border-t border-neutral-300 pt-3">
+                <div id="results-count">Showing 45 of 45 Dossiers</div>
+                <button onclick="resetFilters()" class="text-red-700 font-bold hover:underline">Reset All Filters</button>
+            </div>
+        </div>
+
+        <!-- SEQUENTIAL STUDY FEED -->
+        <section id="news-feed" class="space-y-12">
+            <!-- Dynamically populated entries -->
         </section>
 
     </main>
@@ -83,155 +110,1065 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE DATA LAYER -->
+    <!-- DYNAMIC DATA LAYER -->
     <script>
         const articles = [
+            // -------------------------------------------------------------
+            // MINISTRY OF ELECTRONICS & IT (MeitY)
+            // -------------------------------------------------------------
             {
                 "id": 1,
-                "category": "Semiconductor",
-                "title": "NITI Aayog Releases 'Future of India’s Semiconductor Industry' 10-Year Roadmap",
-                "pib_source_date": "May 29, 2026",
-                "ministry": "NITI Aayog",
-                "original_pib_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7mCkv0sSyiNQSwzpSkJCYTttOtn_uLux3HUa-lXNZnvywc-r5s8FWVu9siBXcnmntj2nvbMF-zZF5zgMI-tShAp-BO1mAk6CN6-_0iluKfTGW4dXzr6QVRzAuvneUz3I86-gKL1COdBIrGFy7SfE=",
-                "syllabus_mapping": "GS Paper III: Achievements of Indians in science & technology; Indigenization of technology; Industrial Policy & Economy.",
-                "why_in_news": "NITI Aayog's Frontier Tech Hub released its first comprehensive 10-year roadmap to transition India from a semiconductor consumer to an indispensable global supply-chain hub by 2035.",
-                
-                // Detailed 16-point analysis mapping
-                "news_summary": "NITI Aayog has officially published a 10-year strategic roadmap targeting a domestic semiconductor ecosystem valued at USD 120-150 Billion by 2035. The roadmap was prompted by deep vulnerabilities highlighted during global supply-chain realignments and the transition to high-value computing. It maps out actionable pillars to expand front-end fabrication, local raw material supply, and high-skilled talent deployment to reduce import reliance on critical silicon components.",
-                
-                "core_tech": "Semiconductors are solid-state materials whose electrical conductivity lies between that of a conductor (copper) and an insulator (glass). By introducing impurities (a process called 'doping'), their electrical behaviors can be precisely manipulated. <br/><br/><b>How it works:</b> Semiconductors act as microscopic switches (transistors) that regulate the binary flow of data (1s and 0s) within electronic devices. <br/><br/><b>Key Components:</b> Silicon Wafers, Photolithography machines (using deep/extreme ultraviolet light to etch nanometer-scale circuits), and Packaging layers.<br/><br/><b>Analogy:</b> Think of a chip as a multi-tier road network; the transistors are traffic lights that regulate microscopic electrical cars to perform logic calculations.<br/><br/><b>Difference:</b> Unlike classical Silicon semiconductors, Wide-Bandgap semiconductors (like Gallium Nitride - GaN, and Silicon Carbide - SiC) allow electronic devices to operate at much higher voltages, temperatures, and frequencies.",
-                
-                "background_evolution": "The roadmap marks the evolution from legacy projects like the state-run Semiconductor Complex Limited (SCL), Mohali, established in 1983. In 2021, the government initiated a major policy shift by launching the India Semiconductor Mission (ISM) with a ₹76,000 crore outlay. Globally, the race is driven by concentration of supply-chains in East Asia (specifically Taiwan's TSMC), prompting Western economies to introduce legislation like the US CHIPS Act to onshore key production capacity.",
-                
-                "prelims_notes": "<b>Core Terms:</b> Doping, Photolithography, OSAT (Outsourced Semiconductor Assembly and Test), ATMP (Assembly, Testing, Marking, and Packaging).<br/><b>Organizations:</b> India Semiconductor Mission (ISM) under Digital India Corporation (MeitY), NITI Aayog's Frontier Tech Hub.<br/><b>Schemes:</b> Semicon India Programme (providing 50% flat financial support), Design Linked Incentive (DLI) Scheme.<br/><b>Key Fact:</b> Gallium Nitride (GaN) is classified as a wide-bandgap semiconductor, offering superior efficiency in power electronics over standard Silicon.",
-                
-                "relevance_india": "<b>Economic:</b> Direct contribution of over $100 Billion to manufacturing GDP by 2035; generates high-skilled engineering jobs and curbs a major source of electronics imports.<br/><b>Strategic:</b> Secures semiconductor self-reliance to protect military defense equipment, aerospace, and critical telecom infrastructure from foreign hardware-level cyber compromises.<br/><b>Governance:</b> Strengthens e-governance hardware layers, improving delivery of online public services.",
-                
-                "challenges_risks": "<b>Infrastructure:</b> High-capacity fabs require ultra-pure water (millions of gallons per day) and uninterrupted electrical grids with zero-millisecond power fluctuations.<br/><b>Financial:</b> High capital expenditures mean a single cutting-edge fab can cost upwards of $10-15 Billion.<br/><b>Skill Gaps:</b> Significant lack of local system-level packaging and physical wafer-fabrication engineers.",
-                
-                "gov_initiatives": "<b>Policy Support:</b> Semicon India Programme (₹76,000 Cr outlay).<br/><b>DLI Scheme:</b> Incentivizes local startups to design domestic integrated circuits.<br/><b>C2S (Chip to Startup) Programme:</b> Trains 85,000 high-end semiconductor design and fabrication engineers at academic institutions.",
-                
-                "intl_dimension": "Geopolitical tech competition has made semiconductor production capacity a core tool of national influence. Under the Quadrilateral Security Dialogue (Quad), member nations have established a Semiconductor Supply Chain Initiative to map and secure key material reserves, directly competing with unilateral export controls on raw materials like gallium and germanium.",
-                
-                "digital_economy": "Localizing semiconductor production directly supports the domestic electronics manufacturing industry. It offers hardware security for FinTech platforms, reduces bills-of-material for local IoT and smartphone startups, and strengthens the physical layer of India's Digital Public Infrastructure (DPI).",
-                
-                "syllabus_linkage": "<b>GS-3:</b> Science & Technology- developments and their applications; Indigenization of technology; Industrial growth.<br/><b>Essay Themes:</b> 'Technological Sovereignty as the cornerstone of 21st-century national strength.'<br/><b>Interview areas:</b> Strategic balance between importing consumer electronics and subsidizing domestic fabs.",
-                
-                "mains_value_add": "<b>Keywords:</b> 'Silicon Diplomacy', 'Fab-less Design Hub', 'Trusted Foundry Network', 'Wide-Bandgap Leapfrogging', 'More-than-Moore'.<br/><b>Data:</b> India currently designs roughly 20% of the world's microchips but has historically outsourced 100% of physical fabrication.<br/><b>Committees:</b> Recommendation of the National Security Advisory Board on setting up a trusted semiconductor pipeline.",
-                
-                "multidimensional_analysis": "<b>Strategic & Security:</b> Shifts India away from external supply chain bottlenecks during geopolitical tensions.<br/><b>Technological & Economic:</b> Promotes shift from a consumer/assembly-focused IT economy to a high-value intellectual property (IP) owner.<br/><b>Ethical & Governance:</b> Balances clean water allocation between semiconductor manufacturing and local agricultural/municipal requirements.",
-                
-                "upsc_questions": "<b>Prelims MCQ 1:</b> Which of the following is correct regarding Gallium Nitride (GaN)? <br/>(a) It is a conventional silicon-based conductor.<br/>(b) It is a wide-bandgap semiconductor suitable for high-power electronics.<br/>(c) It cannot conduct electricity under any doping conditions.<br/>(d) It is primarily used as a cool-water coolant in fabs.<br/><i>Ans: (b) GaN is a wide-bandgap semiconductor offering high thermal and voltage efficiency.</i><br/><br/><b>Mains Question (15 Marks):</b> Discuss the strategic and economic significance of the India Semiconductor Mission (ISM). Analyze the infrastructural and resource challenges India must address to establish commercial-scale fabrication facilities.",
-                
-                "interview_questions": "<b>Policy Question:</b> If allocated a limited infrastructure budget, would you prioritize funding standard chip assembly units (OSAT) or high-cost advanced logic fabrication fabs? Justify your stance.",
-                
-                "one_page_revision": "<b>What:</b> NITI Aayog 10-Year Semiconductor Industry Roadmap.<br/><b>Why:</b> To construct a $150B domestic ecosystem by 2035.<br/><b>Benefits:</b> Supply-chain resilience, strategic sovereignty, high-skilled job creation.<br/><b>Challenges:</b> Water supply, electricity grid stability, capital costs.<br/><b>Key Facts:</b> India houses 20% of global chip design talent; ISM offers 50% fiscal support for fabs.",
-                
-                "exam_verdict": "<b>Prelims Importance:</b> High | <b>Mains Importance:</b> High | <b>Interview Importance:</b> High<br/><b>Probable Areas:</b> Wide-bandgap semiconductor materials (GaN/SiC), structure of the India Semiconductor Mission (ISM) incentives.<br/><b>Hidden Themes:</b> Dual-use applications of commercial chips in defense satellite payloads."
+                "category": "MeitY",
+                "title": "Digital India BHASHINI Division (DIBD) & DPIIT Sign MoU to Strengthen Multilingual Access Across India's Investment Ecosystem",
+                "pib_source_date": "June 1, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II & GS-III",
+                "themes": ["AI", "Digital Public Infrastructure", "Language Technology", "Startup Ecosystem"],
+                "why_in_news": "First major collaboration between BHASHINI and DPIIT. Expands India's Digital Public Infrastructure (DPI) into the investment ecosystem.",
+                "news_summary": "The Digital India BHASHINI Division signed an MoU with DPIIT to enable multilingual access across India's investment and industrial ecosystem. The partnership aims to integrate BHASHINI's AI-powered language technologies into DPIIT's digital platforms, making government information, startup services, and industrial schemes accessible in multiple Indian languages.",
+                "core_tech": "<b>Machine Translation & NLP:</b> Uses Large Multilingual Language Models, Automatic Speech Recognition (ASR), Text-to-Speech (TTS), and AI Translation APIs to translate text and speech across Indian languages in real time.<br><br><b>Analogy:</b> It acts as a digital bridge that translates technical, administrative, and financial terms, allowing a rural startup founder to read regulatory guidelines in their regional language.",
+                "prelims_notes": "<b>BHASHINI:</b> National AI-based language translation platform under MeitY, operating under the National Language Translation Mission (NLTM).<br><b>DPIIT:</b> Department for Promotion of Industry and Internal Trade under the Ministry of Commerce & Industry, managing Startup India and industrial policy.<br><b>Language Coverage:</b> Supports all 22 languages of the Eighth Schedule.",
+                "prelims_traps": "BHASHINI functions under the Ministry of Commerce (False, functions under MeitY). DPIIT is an independent ministry (False, it is a department under the Ministry of Commerce & Industry).",
+                "relevance_india": "<b>Economic:</b> Helps small MSMEs and investors from non-English speaking regions access the formal investment ecosystem.<br><b>Governance:</b> Strengthens multilingual digital governance and eases digital public service delivery.",
+                "challenges_risks": "Ensuring precise translation of complex legal and financial terms without altering the regulatory meaning.",
+                "gov_initiatives": "Startup India, Digital India, National Language Translation Mission.",
+                "mains_value_add": "<b>Keywords:</b> Inclusive Digital Commons, Cognitive Inclusion, Vernacular AI, Last-mile Tech Access.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which of the following is correct regarding BHASHINI?<br>(a) It is a space mission under ISRO.<br>(b) It is an AI-based language translation platform under MeitY.<br>(c) It is a global tax software under Ministry of Finance.<br>(d) It is a semiconductor manufacturing facility.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss how integrating language technologies into India's Digital Public Infrastructure (DPI) can improve digital inclusion and ease of doing business.",
+                "one_page_revision": "<b>What:</b> BHASHINI & DPIIT MoU.<br><b>Why:</b> Enable multilingual access to startup and investment portals.<br><b>Key Agency:</b> MeitY and DPIIT (Ministry of Commerce).",
+                "interview_questions": "How can language translation platforms help bridge the digital divide in rural parts of India?"
             },
             {
                 "id": 2,
-                "category": "Cybersecurity",
-                "title": "MeitY Convenes National Consultative Workshop to Strengthen Cybersecurity Frameworks for State Data",
-                "pib_source_date": "May 16, 2026",
-                "ministry": "Ministry of Electronics & IT",
-                "original_pib_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy3FpryX96mWeM15sISveyT3paYYQD_cOQns69RQDSuWWp95rydGB6XcagkOT44IMfAtVI56nr0xPrVLl44DTrpCt5fA7oGWzdMHQeDq1OlagxRg1Upx_Of9EK7FncwcIbGnhQJiJH-EkYm1anf-ojn_8Kq11m4zpM0JKP",
-                "syllabus_mapping": "GS Paper III: Basics of cyber security; Security challenges and their management; GS Paper II: Governance & Government Policies.",
-                "why_in_news": "A high-level consultative workshop was convened by MeitY, in partnership with NeGD and CERT-In, to finalize a standardized national cybersecurity policy framework for state government databases.",
-                
-                // Detailed 16-point analysis mapping
-                "news_summary": "With the Digital Personal Data Protection (DPDP) Act of 2023 moving toward full enforcement in May 2027, MeitY held a national workshop to align state-level databases with statutory standards. The consultation brought together state IT secretaries, the National Informatics Centre (NIC), and CERT-In to address rising ransomware targets and establish unified incident reporting protocols.",
-                
-                "core_tech": "State data centers store sensitive citizen records (health registries, land ownership, utility profiles). They rely on network security architectures to prevent unauthorized access.<br/><br/><b>How it works:</b> Modern systems are transitioning to a <b>Zero-Trust Architecture</b>, which works on the principle 'never trust, always verify'. Every transaction, user, and device must be continuously authenticated.<br/><br/><b>Key Components:</b> End-to-end Encryption (converting readable plain text to ciphertext), Firewalls, Intrusion Detection Systems (IDS), and Multi-Factor Authentication (MFA).<br/><br/><b>Analogy:</b> Instead of a castle moat (traditional perimeter security), Zero-Trust acts as security guards stationed at every single door inside the castle, checking credentials continuously.<br/><br/><b>Difference:</b> Conventional security assumes once a user is inside the private network, they are trusted. Zero-Trust treats all traffic, internal or external, as hostile.",
-                
-                "background_evolution": "India’s cyber protection regime began with the Information Technology Act, 2000. Over the years, decentralized state databases became frequent targets of ransomware, as shown by the high-profile AIIMS Delhi server attack. This highlighted the need for centralized security frameworks, leading to stricter enforcement of CERT-In directives and the enactment of the statutory DPDP Act in 2023.",
-                
-                "prelims_notes": "<b>CERT-In:</b> Indian Computer Emergency Response Team, operationalized under Section 70B of the IT Act, 2000.<br/><b>Data Fiduciary:</b> Under the DPDP Act, any entity (public or private) that determines the purpose and means of processing personal data.<br/><b>Data Principal:</b> The individual to whom the personal data relates.<br/><b>Key Fact:</b> Under the DPDP Act 2023, data fiduciaries face statutory financial penalties of up to ₹250 crore for failing to prevent personal data breaches.",
-                
-                "relevance_india": "<b>Economic:</b> Enhances business confidence in digital public services and prevents financial losses from cybercrimes.<br/><b>Strategic:</b> Strengthens national cyber-defense by protecting critical public datasets from state-sponsored threat actors during hybrid warfare scenarios.<br/><b>Governance:</b> Builds citizen trust in online public platforms, supporting broader digital financial inclusion.",
-                
-                "challenges_risks": "<b>Technical:</b> Legacy software architectures in state-level registries are difficult to secure without rebuilds.<br/><b>Resource Gaps:</b> Severe shortage of certified cybersecurity professionals in state IT departments.<br/><b>Regulatory:</b> Aligning diverse state departments with strict federal DPDP Act requirements without disrupting daily administrative workflows.",
-                
-                "gov_initiatives": "<b>DPDP Act, 2023:</b> The primary statutory framework regulating personal data protection.<br/><b>Cyber Surakshit Bharat:</b> Initiative to raise awareness and build security capacity among Chief Information Security Officers (CISOs).<br/><b>I4C:</b> Indian Cyber Crime Coordination Centre (under the Ministry of Home Affairs) to handle cyber fraud and state threat response.",
-                
-                "intl_dimension": "Cybersecurity is inherently cross-border, as threat actors often operate from external jurisdictions. India participates in international agreements like the Budapest Convention on Cybercrime (though India is currently a non-signatory, prioritizing sovereign security protocols) and cooperates on cyber-defense through Interpol and the UN GGE on Cyber Security.",
-                
-                "digital_economy": "A secure cyber framework reduces the incidence of data leaks, protecting the domestic startup and FinTech ecosystems. It lowers compliance costs, simplifies the cross-border digital economy, and supports ease of doing business by clarifying data processing liabilities.",
-                
-                "syllabus_linkage": "<b>GS-3:</b> Cybersecurity basics; Role of internal security challenges.<br/><b>GS-2:</b> Administrative transparency, citizen-centric services, DPDP compliance.<br/><b>Essay:</b> 'Privacy in the Age of Big Data: Sovereign Obligations and Citizen Rights.'",
-                
-                "mains_value_add": "<b>Keywords:</b> 'Zero-Trust Architecture', 'Data Sovereignty', 'Data Fiduciary Liability', 'Digital Hygiene', 'State-Sponsored Advanced Persistent Threats (APTs)'.<br/><b>Reports:</b> CERT-In Annual Report on threat trends; NCIIPC guidelines on Protecting Critical Information Infrastructure (CII).",
-                
-                "multidimensional_analysis": "<b>Technological:</b> Drive to upgrade legacy regional databases with modern APIs.<br/><b>Ethical:</b> Balances state collection of citizen data for public welfare schemes against individual privacy rights.<br/><b>Strategic:</b> Elevates local cyber resilience as a core element of national security.",
-                
-                "upsc_questions": "<b>Prelims MCQ 2:</b> Under the Digital Personal Data Protection (DPDP) Act, 2023, the entity that determines the purpose and means of processing personal data is defined as:<br/>(a) Data Principal<br/>(b) Data Fiduciary<br/>(c) Cyber Custodian<br/>(d) Systems Intermediary<br/><i>Ans: (b) Under the DPDP Act, such an entity is termed a 'Data Fiduciary'.</i><br/><br/><b>Mains Question (10 Marks):</b> Highlight the key features of the Digital Personal Data Protection (DPDP) Act, 2023. Discuss the challenges state governments face in aligning their data repositories with this statutory framework.",
-                
-                "interview_questions": "<b>Opinion-Based:</b> How can a district administrator ensure citizen database security without over-complicating local registration systems or excluding non-tech-savvy users?",
-                
-                "one_page_revision": "<b>What:</b> MeitY National Workshop on State Data Security.<br/><b>Why:</b> Preparing for DPDP Act enforcement by May 2027.<br/><b>Key Concept:</b> Zero-Trust Security architectures for public data centers.<br/><b>Regulatory Body:</b> Data Protection Board of India (DPBI) and CERT-In.",
-                
-                "exam_verdict": "<b>Prelims Importance:</b> High | <b>Mains Importance:</b> High | <b>Interview Importance:</b> High<br/><b>Probable Areas:</b> Exemptions under the DPDP Act, powers of the Data Protection Board of India.<br/><b>Hidden Themes:</b> The threat of AI-driven deepfakes used for social engineering to bypass state security access."
+                "category": "MeitY",
+                "title": "Digital India BHASHINI Division, Current AI & Kalpa Impact Launch VYOMA Innovation Challenge to Advance Multilingual Edge AI",
+                "pib_source_date": "June 2, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II & GS-III",
+                "themes": ["Artificial Intelligence", "Edge AI", "Language Technology", "Innovation", "Digital Public Infrastructure"],
+                "why_in_news": "Launch of India's first major innovation challenge focused on offline multilingual Edge AI. Promotes indigenous AI innovation using open-source technologies.",
+                "news_summary": "The Digital India BHASHINI Division (DIBD), under the Digital India Corporation (DIC), in collaboration with Current AI and Kalpa Impact, launched the VYOMA Innovation Challenge. The challenge encourages the development of open-source, multilingual, voice-first AI solutions capable of functioning in offline and low-connectivity environments, building on the 'Sunno Sutra' reference device.",
+                "core_tech": "<b>Edge AI & Model Optimisation:</b> Runs artificial intelligence models directly on local devices rather than on remote cloud servers. This reduces size while maintaining performance, allowing real-time processing without an internet connection.<br><br><b>Analogy:</b> Instead of sending a query to a remote supercomputer over the internet, Edge AI is like running a compact smart brain directly inside your pocket device.",
+                "prelims_notes": "<b>DIBD:</b> Flagship initiative under the Digital India Corporation (DIC) of MeitY.<br><b>Sunno Sutra:</b> An open-source, voice-first, handheld reference AI device developed by BHASHINI and Current AI.<br><b>Prize Pool:</b> Offers up to ₹80 lakh in prize money and deployment opportunities with Central and State governments.",
+                "prelims_traps": "Edge AI always requires active cloud computing (False, computations are processed locally on-device). Sunno Sutra is a commercial smartphone (False, it is an open-source reference platform).",
+                "relevance_india": "<b>Strategic:</b> Strengthens India's technology sovereignty and supports trusted, local AI ecosystems.<br><b>Social:</b> Bridges language barriers and helps digitally excluded communities access services offline.",
+                "challenges_risks": "Limited compute and energy-efficiency constraints on handheld device batteries.",
+                "gov_initiatives": "National Deep Tech Startup Policy, National Language Translation Mission, IndiaAI Mission.",
+                "mains_value_add": "<b>Keywords:</b> On-device AI, Local Processing, Digital Inclusivity, Edge Computing, Voice-first Architecture.",
+                "upsc_questions": "<b>Prelims MCQ:</b> 'Sunno Sutra', recently seen in the news, is a:<br>(a) Supercomputer model under the National Supercomputing Mission.<br>(b) Voice-first, handheld reference AI device developed by BHASHINI.<br>(c) Satellite communication terminal for rural schools.<br>(d) Groundwater mapping device under Jal Jeevan Mission.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate the role of Edge AI and offline voice-first systems in ensuring reliable digital public service delivery in rural India.",
+                "one_page_revision": "<b>What:</b> VYOMA Innovation Challenge.<br><b>Focus:</b> Offline, multilingual voice-first Edge AI solutions.<br><b>Builds on:</b> Sunno Sutra reference device.",
+                "interview_questions": "Why is Edge AI more relevant than cloud-based AI in low-connectivity areas of India?"
             },
             {
                 "id": 3,
-                "category": "Science & Tech",
-                "title": "DoT and NDMA Launch Nationwide Cell Broadcast System (CBS) for Disaster Response",
-                "pib_source_date": "May 2, 2026",
-                "ministry": "Ministry of Communications",
-                "original_pib_url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtA0xs9DvCO4usnCR52mO-yXefcs9CCNVbiNZYP33c6-OmhUQ7cueNsbwiAG8Yeamha_CvQVrtGXaJm8RSHBlIOdQw_7AbZr-OWzIAN93af63ONqQY3qKNkmJb4A3J-6MXjUNTPbVbUuEF785tFjK2xpsyy3Uc6gLdbVu1",
-                "syllabus_mapping": "GS Paper III: Disaster and disaster management; Basics of cyber security; Science & Tech developments.",
-                "why_in_news": "The Department of Telecommunications (DoT) and National Disaster Management Authority (NDMA) successfully deployed the indigenous Cell Broadcast System (CBS) to enable swift, geo-targeted public safety warnings during disasters.",
-                
-                // Detailed 16-point analysis mapping
-                "news_summary": "The Ministry of Communications, in collaboration with the NDMA, has operationalized the indigenously developed Cell Broadcast System (CBS). CBS allows immediate dissemination of emergency alerts during natural disasters, such as cyclones, flash floods, or industrial hazard events. It addresses a critical gap: conventional SMS-based systems often fail during mass crises due to cellular network congestion.",
-                
-                "core_tech": "Cell Broadcasting (CB) is a mobile technology that enables the transmission of emergency messages to all active mobile devices in a specific geographical area, regardless of cellular network congestion.<br/><br/><b>How it works:</b> Unlike point-to-point SMS, which sends messages individually to specific phone numbers, CBS broadcasts a single warning signal from selected cellular towers. This message is received simultaneously by all active mobile phones within range.<br/><br/><b>Key Components:</b> Cell Broadcast Centre (CBC) linked to NDMA's disaster warning system, and base transceiver stations (BTS) at telecom towers.<br/><br/><b>Analogy:</b> Point-to-point SMS is like a postman delivering individual letters to every house. Cell Broadcasting is like using a powerful public megaphone that reaches everyone in the neighborhood instantly.<br/><br/><b>Difference:</b> CBS bypasses the SMS delivery queue and does not require mobile internet, active data plans, or mobile number directories.",
-                
-                "background_evolution": "Previously, India relied on SMS-based alerts through the 'Common Alerting Protocol' (CAP). During major disasters like Cyclone Fani, cellular network congestion delayed or blocked warning messages, underscoring the need for a non-congestible solution. This led the Centre for Development of Telematics (C-DOT) to develop CBS natively to support the Sendai Framework for Disaster Risk Reduction.",
-                
-                "prelims_notes": "<b>C-DOT:</b> Centre for Development of Telematics, India's premier telecom R&D center under the Ministry of Communications.<br/><b>CAP Standard:</b> Common Alerting Protocol, an XML-based international standard format for emergency alerts.<br/><b>SACHET:</b> The integrated multi-channel public alert system utilized by NDMA.<br/><b>Key Fact:</b> CBS alerts are transmitted with a unique audio-vibrational tone that can bypass a device's silent settings.",
-                
-                "relevance_india": "<b>Economic:</b> Saves critical public infrastructure and minimizes economic losses by enabling early, orderly evacuations during disaster events.<br/><b>Strategic:</b> Enhances national security communications, allowing the state to alert targeted zones during critical national defense emergencies.<br/><b>Governance:</b> Strengthens last-mile warning systems, protecting vulnerable communities, coastal fishermen, and remote populations.",
-                
-                "challenges_risks": "<b>Technical:</b> Some older legacy handsets may lack firmware support for emergency override vibration and sound protocols.<br/><b>Behavioral:</b> Frequent false or low-risk warning alerts could lead to user fatigue, causing citizens to ignore critical alerts.<br/><b>Coordination:</b> Requires seamless, real-time data sharing between state weather departments, federal agencies (IMD, NDMA), and telecom operators.",
-                
-                "gov_initiatives": "<b>SACHET Portal:</b> Integrated warning system developed to unify alerts across SMS, CBS, television, and radio.<br/><b>National Disaster Management Plan (NDMP):</b> Includes guidelines to incorporate advanced digital communication tools into state-level evacuation operations.",
-                
-                "intl_dimension": "The deployment supports India's commitments under the Sendai Framework for Disaster Risk Reduction (2015-2030), specifically Target G, which focuses on substantially increasing the availability of and access to multi-hazard early warning systems.",
-                
-                "digital_economy": "CBS provides a reliable public safety foundation for the digital economy. It secures critical tech corridors, allows digital logistics and supply networks to adapt dynamically to regional emergencies, and increases safety across localized industrial corridors.",
-                
-                "syllabus_linkage": "<b>GS-3:</b> Disaster management; Applications of IT in disaster mitigation.<br/><b>Essay Theme:</b> 'Technology as humanity's shield against nature's uncertainty.'<br/><b>Interview:</b> The role of proactive tech-led governance vs. reactive post-disaster rehabilitation.",
-                
-                "mains_value_add": "<b>Keywords:</b> 'Last-Mile Alert Connectivity', 'Disaster Risk Reduction (DRR)', 'Sendai Target G', 'Geo-Targeted Alerts', 'Zero-Congestion Delivery'.<br/><b>Reports:</b> United Nations office for Disaster Risk Reduction (UNDRR) early warning metrics; NDMA guidelines on Cyclone Mitigation.",
-                
-                "multidimensional_analysis": "<b>Governance:</b> Empowers district disaster managers with highly targeted tools.<br/><b>Technological:</b> Showcases domestic design and engineering capabilities through C-DOT.<br/><b>Ethical:</b> Minimizes casualties among marginalized communities residing in high-risk zones.",
-                
-                "upsc_questions": "<b>Prelims MCQ 3:</b> The 'SACHET' platform, frequently mentioned in national news, is primarily associated with which of the following?<br/>(a) An online portal for MSME credit clearance.<br/>(b) An integrated public alert system for disaster management.<br/>(c) A cyber security tracking system for public sector banks.<br/>(d) A rural literacy monitoring framework.<br/><i>Ans: (b) SACHET is an integrated early warning public alert portal managed by NDMA.</i><br/><br/><b>Mains Question (10 Marks):</b> Explain the concept of Cell Broadcasting technology. Discuss its role in strengthening India's disaster management capabilities and alignment with the Sendai Framework.",
-                
-                "interview_questions": "<b>Policy Question:</b> How would you address the challenge of regional language barriers when deploying automated emergency broadcast alerts across diverse, border-lying districts?",
-                
-                "one_page_revision": "<b>What:</b> Indigenous Cell Broadcast System (CBS).<br/><b>Developer:</b> C-DOT and NDMA.<br/><b>Tech Advantage:</b> Avoids network congestion by broadcasting alerts directly to all devices in a targeted zone.<br/><b>Global Standards:</b> Supports Sendai Framework Target G.",
-                
-                "exam_verdict": "<b>Prelims Importance:</b> Medium | <b>Mains Importance:</b> High | <b>Interview Importance:</b> High<br/><b>Probable Areas:</b> Differences between SMS and Cell Broadcasting; roles of C-DOT and NDMA.<br/><b>Hidden Themes:</b> Integrating real-time IoT sensors with automated cell broadcast centers to enable instant earthquake alerts."
+                "category": "MeitY",
+                "title": "STPI Tech Summit 2026: Driving India's Transition Towards a Deep Tech and Product Innovation Economy",
+                "pib_source_date": "June 5, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Deep Tech", "Startup Ecosystem", "Innovation", "IT Exports", "Electronics", "Digital Economy"],
+                "why_in_news": "STPI announced new initiatives for Deep Tech startups to drive innovation-led economic growth and transition India from services to products.",
+                "news_summary": "The Software Technology Parks of India (STPI) organized the STPI Tech Summit 2026. The event highlighted India's transition from an IT services economy to an intellectual property (IP) and technology product economy, focusing on AI, IoT, cybersecurity, semiconductors, and robotics.",
+                "core_tech": "<b>IT Services vs. Product Economy:</b> Services are client-based, manpower-dependent, and yield limited IP. A Product Economy relies on globally scalable, high-margin software and hardware products backed by proprietary patents.<br><br><b>Analogy:</b> IT Services is like working as a contract builder for other developers. A Product Economy is like designing, patenting, and manufacturing your own modular houses globally.",
+                "prelims_notes": "<b>STPI:</b> Autonomous society established in 1991 under MeitY to promote software exports.<br><b>Centre of Excellence (CoE):</b> Specialized innovation hubs operated by STPI across domains like AI, IoT, Blockchain, FinTech, and HealthTech.",
+                "prelims_traps": "STPI is under the Ministry of Commerce (False, it is under MeitY). Deep Tech refers only to digital software startups (False, it includes physical engineering fields like advanced materials, robotics, and biotechnology).",
+                "relevance_india": "<b>Economic:</b> Increases export values per employee and generates high-skilled technical jobs.<br><b>Strategic:</b> Strengthens technology sovereignty and reduces dependence on imported software.",
+                "challenges_risks": "High research costs and a lack of long-term patient capital in domestic venture markets.",
+                "gov_initiatives": "National Deep Tech Startup Policy, Startup India, India Semiconductor Mission.",
+                "mains_value_add": "<b>Keywords:</b> Product Nation, Intellectual Property Commons, Patient Capital, Technology Sovereignty.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Software Technology Parks of India (STPI) was established under which Ministry?<br>(a) Ministry of Science & Technology<br>(b) Ministry of Electronics & IT (MeitY)<br>(c) Ministry of Commerce & Industry<br>(d) Ministry of Communications<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the policy interventions required to transition India from an IT services outsourcing nation to a technology product exporter.",
+                "one_page_revision": "<b>What:</b> STPI Tech Summit 2026.<br><b>Theme:</b> Shifting from IT Services to a Product Innovation Economy.<br><b>Facilitator:</b> STPI (Est. 1991, MeitY).",
+                "interview_questions": "What are the primary bottlenecks preventing Indian universities from producing world-class deep tech startups?"
+            },
+            {
+                "id": 4,
+                "category": "MeitY",
+                "title": "Digital Diplomacy: BHASHINI Division Signs MoU with Kathmandu University for AI Cooperation",
+                "pib_source_date": "June 6, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II",
+                "themes": ["Digital Diplomacy", "AI", "Language Models"],
+                "why_in_news": "Extends India's Digital Public Infrastructure (DPI) framework to neighboring countries under the 'Neighborhood First' policy.",
+                "news_summary": "The BHASHINI division signed an MoU with Kathmandu University to develop localized translation models and share AI expertise with Nepal. The partnership focuses on building localized translation systems to support bilateral trade, tourism, and administrative cooperation.",
+                "core_tech": "<b>Cross-Lingual Transfer Learning:</b> Adapts language models from high-resource languages to related low-resource ones.<br><br><b>Analogy:</b> It acts like a language bridge, helping someone who speaks Hindi quickly understand and translate Nepali by leveraging the shared grammatical and linguistic roots.",
+                "prelims_notes": "<b>DPI Diplomacy:</b> Sharing sovereign digital public systems with allied countries.<br><b>BHASHINI APIs:</b> Open-source translation models shared under bilateral agreements.",
+                "prelims_traps": "This partnership is managed under the Ministry of External Affairs' own tech division (False, it is run directly by MeitY's BHASHINI division).",
+                "relevance_india": "<b>Strategic:</b> Establishes India as a trusted technology partner in the region, offering reliable alternative solutions to foreign systems.",
+                "challenges_risks": "Managing regional variations in grammar and dialects across local communities.",
+                "gov_initiatives": "Neighborhood First Policy, Digital India international expansion programs.",
+                "mains_value_add": "<b>Keywords:</b> DPI Export, Soft Power Tech, Sovereign AI Networks, South Asian Integration.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The term 'Cross-Lingual Transfer Learning' is associated with which technology?<br>(a) Satellite mapping<br>(b) Artificial Intelligence / Large Language Models<br>(c) Blockchain ledger systems<br>(d) Quantum computer hardware<br><i>Ans: (b)</i><br><br><b>Mains:</b> Assess how sharing digital platforms like BHASHINI can serve as a soft power tool in India's regional diplomacy.",
+                "one_page_revision": "<b>What:</b> BHASHINI and Kathmandu University MoU.<br><b>Why:</b> Share AI language models and translation expertise with Nepal.<br><b>Context:</b> Tech diplomacy.",
+                "interview_questions": "How can technology partnerships help India improve its geopolitical relations with its immediate neighbors?"
+            },
+            {
+                "id": 5,
+                "category": "MeitY",
+                "title": "DigiLocker Records Massive Expansion in User Registration and Service Integrations",
+                "pib_source_date": "June 10, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II & GS-III",
+                "themes": ["Digital Public Infrastructure", "e-Governance"],
+                "why_in_news": "A significant increase in registered users highlights the growing adoption of paperless verification systems across both public and private sectors.",
+                "news_summary": "DigiLocker recorded a massive expansion in its user base and issued document registers. Integrating more academic, financial, and administrative agencies has made DigiLocker a core part of digital public services and instant identity verification.",
+                "core_tech": "<b>Cryptographic URI Mapping:</b> Replaces physical paper documents with secure, digital records verified directly from the issuing authority's database using unique Uniform Resource Identifier (URI) pointers.<br><br><b>Analogy:</b> It acts like a digital safe deposit box where you don't carry physical paper certificates, but show a verified digital key linked directly to the official government source.",
+                "prelims_notes": "<b>Legal Recognition:</b> Rule 9A of the IT Rules recognizes documents in DigiLocker as legally equivalent to physical originals.<br><b>Operator:</b> Digital India Corporation under MeitY.",
+                "prelims_traps": "DigiLocker documents are only optional reference copies and have no legal standing in courts (False, they have legal equivalence under Rule 9A).",
+                "relevance_india": "<b>Governance:</b> Reduces administrative costs and paper usage while speeding up public service delivery.",
+                "challenges_risks": "Ensuring robust encryption and privacy protections to safeguard sensitive personal data.",
+                "gov_initiatives": "National e-Governance Plan (NeGP), Digital India program.",
+                "mains_value_add": "<b>Keywords:</b> Paperless Governance, Trust Architecture, Dynamic Identity Verification.",
+                "upsc_questions": "<b>Prelims MCQ:</b> DigiLocker documents are recognized as legally equivalent to physical originals under which rule of the IT Act framework?<br>(a) Rule 3<br>(b) Rule 9A<br>(c) Rule 12<br>(d) Rule 15<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the impact of paperless verification platforms on reducing administrative corruption and improving public service transparency.",
+                "one_page_revision": "<b>What:</b> DigiLocker expansion milestone.<br><b>Key Rule:</b> Rule 9A (IT Rules) establishes legal equivalence to paper.<br><b>Operator:</b> DIC (MeitY).",
+                "interview_questions": "How would you address data privacy concerns for citizens utilizing national cloud document storage systems?"
+            },
+            {
+                "id": 6,
+                "category": "MeitY",
+                "title": "IndiaAI Mission Launches 'Varya' - India's Indigenous Video Generation Foundation Model",
+                "pib_source_date": "June 12, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Generative AI", "Indigenous AI", "IndiaAI Mission"],
+                "why_in_news": "IndiaAI launched its first sovereign generative video foundation model, 'Varya', to build independent content creation capabilities.",
+                "news_summary": "Developed under the IndiaAI Mission, 'Varya' is a generative video model trained on representative datasets to reflect localized cultural contexts and reduce bias in generative media.",
+                "core_tech": "<b>Diffusion-Transformer (DiT):</b> Combines spatial image generation with transformer architectures to maintain visual consistency and logical timing across video frames.<br><br><b>Analogy:</b> The model acts like a virtual movie director that plans how objects and characters move and change smoothly from frame to frame, avoiding erratic shifts.",
+                "prelims_notes": "<b>IndiaAI Mission:</b> A ₹10,372 crore initiative to build sovereign compute and foundational AI models.<br><b>Model:</b> Developed by public institutions and domestic research partners.",
+                "prelims_traps": "Varya was developed by private foreign search platforms (False, it is a public-sector, indigenous project under the IndiaAI Mission).",
+                "relevance_india": "<b>Strategic:</b> Establishes sovereign capabilities in generative AI, reducing reliance on proprietary foreign models.",
+                "challenges_risks": "High high-performance GPU requirements face global supply shortages.",
+                "gov_initiatives": "National Program on AI, IndiaAI Compute Capacity framework.",
+                "mains_value_add": "<b>Keywords:</b> Sovereign GenAI, Cultural Representation, Spatio-Temporal Coherence.",
+                "upsc_questions": "<b>Prelims MCQ:</b> 'Varya', recently in the news under the IndiaAI Mission, refers to a:<br>(a) Weather forecasting satellite.<br>(b) Sovereign generative video foundation model.<br>(c) Supercomputer deployment at IIT Delhi.<br>(d) Cybersecurity firewall system.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the strategic importance of developing domestic AI foundation models to protect cultural diversity and ensure national security.",
+                "one_page_revision": "<b>What:</b> Launch of Varya video model.<br><b>Under:</b> IndiaAI Mission (₹10,372 Cr).<br><b>Focus:</b> Representative generative video tools.",
+                "interview_questions": "How can sovereign generative AI models help counter deepfakes and misinformation?"
+            },
+            {
+                "id": 7,
+                "category": "MeitY",
+                "title": "MeitY Convenes National Consultation on AI Transformation in IT Services",
+                "pib_source_date": "June 15, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["AI in IT Services", "Future of work"],
+                "why_in_news": "Focuses on upskilling the labor force to help workers transition into AI-augmented and advanced technical roles.",
+                "news_summary": "MeitY held a workshop with industry leaders, labor groups, and educators to address the impacts of automation in the IT services sector. Discussions focused on upskilling initiatives and leveraging AI-driven workflows.",
+                "core_tech": "<b>Agentic AI:</b> Advanced AI systems designed to execute multi-step workflows and make decisions with minimal human intervention, moving beyond simple static automation.<br><br><b>Analogy:</b> Shifting from a digital assistant that only books a meeting when asked, to an autonomous manager that schedules, plans, and follows up on project milestones.",
+                "prelims_notes": "<b>Co-organizer:</b> NASSCOM, the primary trade association for the Indian IT services sector.<br><b>Framework:</b> National Skill Qualification Framework (NSQF).",
+                "prelims_traps": "Agentic AI requires continuous human confirmation for every simple sub-step (False, it is designed for autonomous multi-step execution).",
+                "relevance_india": "<b>Economic:</b> Helps Indian IT exporters offer high-margin AI consulting services globally.",
+                "challenges_risks": "The fast pace of AI development can outstrip standard academic and training programs.",
+                "gov_initiatives": "FutureSkills Prime (MeitY & NASSCOM), Skill India Mission.",
+                "mains_value_add": "<b>Keywords:</b> Cognitive Automation, Labor Reskilling, High-value Service Delivery.",
+                "upsc_questions": "<b>Prelims MCQ:</b> 'FutureSkills Prime', a national digital upskilling platform, is a joint initiative of:<br>(a) Ministry of HRD & NITI Aayog.<br>(b) MeitY & NASSCOM.<br>(c) ISRO & UGC.<br>(d) Ministry of Skill Development & NSDC.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the potential socioeconomic impacts of AI-driven automation on white-collar employment in India's service exports.",
+                "one_page_revision": "<b>What:</b> Consultation on AI Transformation in IT.<br><b>Focus:</b> Preparing the workforce for Agentic AI and automation.<br><b>Collaborators:</b> MeitY and NASSCOM.",
+                "interview_questions": "How can the government protect entry-level jobs from automation while encouraging technology adoption?"
+            },
+            {
+                "id": 8,
+                "category": "MeitY",
+                "title": "UIDAI Finalizes High-Accuracy Biometric SDK Benchmarking",
+                "pib_source_date": "June 15, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Biometrics", "Aadhaar", "Authentication"],
+                "why_in_news": "Upgrades the security and reliability of biometric checks for public services and banking authentication.",
+                "news_summary": "UIDAI completed benchmarking tests for advanced Biometric Software Development Kits (SDKs) to improve the accuracy of fingerprint and facial recognition systems across different device and lighting conditions.",
+                "core_tech": "<b>Liveness Detection:</b> Algorithms that verify if biometric input is from a living person, preventing spoofing attempts using photos or synthetic materials.<br><br><b>Analogy:</b> A smart security check that confirms a passport photo matches your face and verifies you are present and responsive.",
+                "prelims_notes": "<b>UIDAI:</b> Statutory body under the Aadhaar Act, 2016, operating under MeitY.<br><b>Integration:</b> Supports secure, biometric authentication for public welfare programs and AePS.",
+                "prelims_traps": "UIDAI operates under the Ministry of Home Affairs (False, it is a statutory authority under MeitY).",
+                "relevance_india": "<b>Governance:</b> Reduces authentication errors to prevent eligible beneficiaries from being excluded from welfare programs.",
+                "challenges_risks": "Ensuring facial recognition software maintains consistent accuracy across diverse skin tones and ages.",
+                "gov_initiatives": "Aadhaar Enabled Payment System (AePS), Jan Dhan-Aadhaar-Mobile (JAM) trinity.",
+                "mains_value_add": "<b>Keywords:</b> Authentication Reliability, Liveness Verification, Digital Inclusion, Identity Protection.",
+                "upsc_questions": "<b>Prelims MCQ:</b> 'Liveness Detection' in biometric systems is primarily used to:<br>(a) Measure body temperature.<br>(b) Confirm the biometric input is from a live person and prevent spoofing.<br>(c) Compress biometric data files.<br>(d) Encrypt local hard drives.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the balance between technological efficiency and data privacy in managing national biometric databases like Aadhaar.",
+                "one_page_revision": "<b>What:</b> UIDAI Biometric SDK Benchmarking.<br><b>Goal:</b> Improve authentication success and prevent spoofing.<br><b>Mechanism:</b> Next-generation Liveness Detection.",
+                "interview_questions": "How can we ensure biometric systems do not exclude vulnerable rural populations due to physical wear?"
+            },
+            {
+                "id": 9,
+                "category": "MeitY",
+                "title": "BHASHINI Partners with Government e-Marketplace (GeM) to Enable Multilingual Procurement",
+                "pib_source_date": "June 15, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II & GS-III",
+                "themes": ["Multilingual Governance", "Digital Procurement"],
+                "why_in_news": "Helps regional artisans and small MSMEs participate in public procurement processes in their regional languages.",
+                "news_summary": "MeitY's BHASHINI division signed an MoU with the Government e-Marketplace (GeM) to add real-time voice translation and regional language support to the public procurement portal.",
+                "core_tech": "<b>Conversational Commerce APIs:</b> Integrates voice recognition, machine translation, and text-to-speech to enable voice navigation and data entry on digital platforms.<br><br><b>Analogy:</b> An automated, multilingual assistant that listens to sellers talk about their goods and fills out the online procurement forms for them in their native language.",
+                "prelims_notes": "<b>GeM:</b> Single-window public procurement portal under the Ministry of Commerce & Industry.<br><b>BHASHINI:</b> Standard API provider under MeitY's translation mission.",
+                "prelims_traps": "GeM portal is managed under the Ministry of MSME (False, it is under the Ministry of Commerce & Industry).",
+                "relevance_india": "<b>Economic:</b> Opens government contract markets to small regional businesses, promoting local manufacturing.",
+                "challenges_risks": "Ensuring accurate translation of technical product specifications across regional dialects.",
+                "gov_initiatives": "GeM Startup Runway, Vocal for Local, National Language Translation Mission.",
+                "mains_value_add": "<b>Keywords:</b> Voice-to-Form Filling, Democratic Markets, Conversational Procurement, Local MSMEs.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The Government e-Marketplace (GeM) portal operates under which Ministry?<br>(a) Ministry of Finance<br>(b) Ministry of Commerce & Industry<br>(c) Ministry of MSME<br>(d) Ministry of Electronics & IT<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate how combining language translation technologies with public procurement platforms can improve market access for micro-enterprises.",
+                "one_page_revision": "<b>What:</b> BHASHINI and GeM partnership.<br><b>Goal:</b> Add voice-based and multilingual capabilities to public bidding.<br><b>Target:</b> Small regional MSMEs and local artisans.",
+                "interview_questions": "How can voice-first interfaces help lower barriers for non-tech-savvy regional business owners?"
+            },
+            {
+                "id": 10,
+                "category": "MeitY",
+                "title": "DigiLocker Integrates Unified Family ID Services for State Digital Governance",
+                "pib_source_date": "June 17, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-II",
+                "themes": ["Family ID", "DPI", "Digital Governance"],
+                "why_in_news": "Links state-level family databases with national verifications to simplify social benefit distribution.",
+                "news_summary": "DigiLocker completed API integrations with Family ID registries across Rajasthan, Madhya Pradesh, Uttar Pradesh, and Maharashtra, enabling single-window verification for household welfare benefits.",
+                "core_tech": "<b>Database Interoperability APIs:</b> Uses secure APIs to link separate state welfare databases with national identity registries under a consent-based framework.<br><br><b>Analogy:</b> It acts like a master key that checks a family’s unified profile once, verifying their eligibility for welfare benefits without requiring separate applications.",
+                "prelims_notes": "<b>Integrated States:</b> Rajasthan (Jan Aadhaar), Uttar Pradesh (Parivar Kalyan Card), Madhya Pradesh, and Maharashtra.<br><b>DPI Concept:</b> Interoperable digital registries.",
+                "prelims_traps": "Family ID registries are managed by the Central Government directly (False, they are state-level databases linked through APIs).",
+                "relevance_india": "<b>Governance:</b> Reduces administrative duplicates and leaks in social benefit programs.",
+                "challenges_risks": "Ensuring robust privacy protections when linking multiple family-level databases.",
+                "gov_initiatives": "Digital Public Infrastructure, state-level Jan Aadhaar and Parivar Pehchan Patra schemes.",
+                "mains_value_add": "<b>Keywords:</b> Household Benefit Delivery, Database Interoperability, Consent Frameworks, Targeted Distribution.",
+                "upsc_questions": "<b>Prelims MCQ:</b> State-level Family ID registries are integrated with DigiLocker primarily to:<br>(a) Issue passport documents.<br>(b) Enable single-window verification for household-level public welfare distribution.<br>(c) Monitor local land disputes.<br>(d) Track direct tax collection.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the benefits and privacy concerns of linking household and family identity registries for social welfare programs.",
+                "one_page_revision": "<b>What:</b> DigiLocker Family ID integration.<br><b>Collaborators:</b> Rajasthan, UP, MP, Maharashtra registries.<br><b>Benefit:</b> Unified household welfare checks.",
+                "interview_questions": "How can state departments protect citizen privacy when sharing linked family databases?"
+            },
+            {
+                "id": 11,
+                "category": "MeitY",
+                "title": "Union Minister Inaugurates Jabil's Advanced Manufacturing & AI Data Centre Infrastructure Hub in Pune",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Electronics Manufacturing", "Data Centres", "Employment", "Make in India"],
+                "why_in_news": "Union Minister Ashwini Vaishnaw inaugurated Jabil's new electronics facility in Pune to manufacture server hardware and components for AI data centers.",
+                "news_summary": "Located in Pune, Maharashtra, the new facility will manufacture high-complexity printed circuit boards (PCBs) and advanced thermal management hardware to support domestic high-performance computing (HPC) networks.",
+                "core_tech": "<b>High-Density server PCBAs:</b> Multi-layered printed circuit boards designed to handle high electrical and heat loads from advanced AI processing chips.<br><br><b>Analogy:</b> Upgrading factory lines from building basic standard appliances to assembling high-performance engines designed to run under continuous stress.",
+                "prelims_notes": "<b>Jabil Inc.:</b> A prominent global Electronics Manufacturing Services (EMS) provider.<br><b>Ranjangaon:</b> Major electronics manufacturing cluster in Pune, Maharashtra.",
+                "prelims_traps": "The facility is set up primarily to manufacture silicon wafers from raw sand (False, it focuses on complex PCB assembly and server components, not raw silicon wafer fabrication).",
+                "relevance_india": "<b>Economic:</b> Boosts high-value exports and creates high-skilled manufacturing jobs.<br><b>Strategic:</b> Secures the physical hardware layer of domestic data centers, reducing reliance on imported systems.",
+                "challenges_risks": "Dependence on imported raw silicon components and specialized precision micro-hardware.",
+                "gov_initiatives": "PLI Scheme for IT Hardware, Modified Electronics Manufacturing Clusters (EMC 2.0).",
+                "mains_value_add": "<b>Keywords:</b> Compute Sovereignty, Server indigenization, EMS export hub, High-Performance Infrastructure.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The Ranjangaon Electronics Manufacturing Cluster (EMC) is located in which State?<br>(a) Tamil Nadu<br>(b) Karnataka<br>(c) Maharashtra<br>(d) Gujarat<br><i>Ans: (c)</i><br><br><b>Mains:</b> Discuss the strategic importance of domestic hardware manufacturing in achieving reliable and secure national AI capabilities.",
+                "one_page_revision": "<b>What:</b> Jabil's advanced manufacturing facility in Pune.<br><b>Target:</b> Server hardware and thermal systems for AI data centers.<br><b>Scheme:</b> PLI for IT Hardware.",
+                "interview_questions": "How can India build its own micro-component supply chain to reduce dependence on imported electronics parts?"
+            },
+            {
+                "id": 12,
+                "category": "MeitY",
+                "title": "NIXI Showcases Domestic Domain Safety and IPv6 Adoption Milestones on 23rd Foundation Day",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Internet Governance", ".IN domain", "DNS"],
+                "why_in_news": "Highlights developments in local routing, .IN domain safety, and India's leading role in global IPv6 adoption.",
+                "news_summary": "The National Internet Exchange of India (NIXI) marked its 23rd Foundation Day by presenting advancements in secure local routing and IPv6 transition rates, which help secure domestic network connections.",
+                "core_tech": "<b>IPv6 Network Routing:</b> Uses 128-bit internet addresses to provide a larger pool of unique identifiers, supporting end-to-end encryption and secure routing for connected devices.<br><br><b>Analogy:</b> Transitioning from a small post office with limited address boxes to a system where every individual object has its own unique, permanent global address.",
+                "prelims_notes": "<b>NIXI:</b> Non-profit company established in 2003 under Section 25 (now Section 8) of the Companies Act to optimize domestic internet routing.<br><b>IRINN:</b> Indian Registry for Internet Names and Numbers, managing IP addresses under NIXI.",
+                "prelims_traps": "NIXI is an administrative wing of the Department of Posts (False, it is a non-profit company under MeitY's oversight).",
+                "relevance_india": "<b>Security:</b> Keeps domestic internet traffic within national boundaries, reducing latency and exposure to external threats.",
+                "challenges_risks": "Ensuring small enterprises and legacy networks upgrade smoothly to newer IPv6 standards.",
+                "gov_initiatives": "National IPv6 Roadmap, Digital India infrastructure programs.",
+                "mains_value_add": "<b>Keywords:</b> Traffic Localization, Address Sovereignty, Resilient Routing, Internet Exchange Points (IXPs).",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which organization is responsible for managing the '.IN' country-code registry in India?<br>(a) CDAC<br>(b) NIXI<br>(c) NIC<br>(d) CERT-In<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate the role of domestic internet exchange infrastructures in ensuring national network security and digital sovereignty.",
+                "one_page_revision": "<b>What:</b> NIXI's 23rd Foundation Day milestones.<br><b>Focus:</b> Secure .IN routing and IPv6 adoption (78.3%).<br><b>Role:</b> Domestic internet traffic optimization.",
+                "interview_questions": "How does keeping domestic internet traffic localized improve national cyber security?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF COMMUNICATIONS
+            // -------------------------------------------------------------
+            {
+                "id": 13,
+                "category": "Communications",
+                "title": "TRAI Releases Unified Rating Manual 2026 for Digital Connectivity in Buildings",
+                "pib_source_date": "June 9, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Digital Connectivity", "Broadband", "Telecom"],
+                "why_in_news": "The Telecom Regulatory Authority of India (TRAI) released the manual to evaluate and rate buildings on indoor digital connectivity.",
+                "news_summary": "The 'Unified Rating Manual 2026' establishes rating criteria for residential and commercial buildings, encouraging developers to integrate high-speed digital and fiber connectivity directly into construction designs.",
+                "core_tech": "<b>Indoor Digital Distribution:</b> Installing shared in-building optical fiber cables, small-cell network systems, and internal antenna arrays to support reliable indoor 5G/6G coverage.<br><br><b>Analogy:</b> Designing buildings with pre-installed internal water pipes rather than trying to route hoses through windows after construction is complete.",
+                "prelims_notes": "<b>TRAI:</b> Statutory regulatory body established under the Telecom Regulatory Authority of India Act, 1997.<br><b>IBS:</b> In-Building Solutions, shared telecom infrastructures to improve indoor coverage.",
+                "prelims_traps": "TRAI ratings are mandatory requirements for registration of all private residential land (False, they are promotional rating standards, not mandatory land-ownership registration blocks).",
+                "relevance_india": "<b>Consumer:</b> Creates transparency by rating properties on network readiness, improving connectivity quality.",
+                "challenges_risks": "Aligning national municipal building codes and real estate guidelines with modern telecom network requirements.",
+                "gov_initiatives": "National Broadband Mission, GatiShakti Sanchar portal.",
+                "mains_value_add": "<b>Keywords:</b> Digital-Ready Infrastructure, Indoor Coverage Index, Telecom Facility Sharing.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The Telecom Regulatory Authority of India (TRAI) was established under which Act?<br>(a) Indian Telegraph Act, 1885<br>(b) TRAI Act, 1997<br>(c) Information Technology Act, 2000<br>(d) Telecommunications Act, 2023<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate how standardized building connectivity ratings can improve urban digital infrastructure and support consumer choices.",
+                "one_page_revision": "<b>What:</b> TRAI Unified Rating Manual 2026.<br><b>Focus:</b> Standardizing indoor digital connectivity ratings for buildings.<br><b>Framework:</b> IBS sharing.",
+                "interview_questions": "How can municipal corporations integrate digital connectivity requirements into structural urban designs?"
+            },
+            {
+                "id": 14,
+                "category": "Communications",
+                "title": "India Post Launches Pilot for Drone-Based Rural Mail and Medical Delivery Service",
+                "pib_source_date": "June 13, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Drone", "Postal Technology", "Logistics"],
+                "why_in_news": "The Department of Posts launched pilot programs for drone-based mail, parcel, and medical deliveries in remote and coastal regions.",
+                "news_summary": "The program uses autonomous UAVs to deliver essential medicines and postal parcels to isolated regions, bypassing difficult geographic terrains and landslide-prone roads.",
+                "core_tech": "<b>Autonomous BVLOS UAVs:</b> Drones equipped with real-time GPS navigation, automated obstacle avoidance, and redundant links for long-range, unmanned operations.<br><br><b>Analogy:</b> An automated courier that flies directly over rugged terrain, ignoring blocked or winding mountain roads.",
+                "prelims_notes": "<b>India Post:</b> Under the Ministry of Communications, maintaining the world's most widely distributed postal network.<br><b>BVLOS:</b> Beyond Visual Line of Sight, drone flight operations extending beyond the pilot's direct visual range.",
+                "prelims_traps": "BVLOS flights are limited only to high-altitude areas with strict manual line-of-sight visual controls (False, BVLOS allows automated long-range flights beyond the operator's view).",
+                "relevance_india": "<b>Logistics:</b> Significantly reduces delivery times for urgent medical supplies and postal shipments to remote border regions.",
+                "challenges_risks": "Maintaining flight stability during high-altitude operations, strong winds, and heavy rainfall.",
+                "gov_initiatives": "Liberalized Drone Rules, Drone Shakti program.",
+                "mains_value_add": "<b>Keywords:</b> Aerial Last-Mile Logistics, BVLOS Postal Operations, Resilient Healthcare Corridors.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The term 'BVLOS' in modern transport technology stands for:<br>(a) Binary Voice Logical Operating System.<br>(b) Beyond Visual Line of Sight.<br>(c) Broad Vector Linear Optical System.<br>(d) Beacon Verification Logistics Network.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the potential and regulatory requirements of autonomous drone technology in improving rural logistics and healthcare access in India.",
+                "one_page_revision": "<b>What:</b> India Post drone delivery pilot.<br><b>Operation:</b> BVLOS drone flights for mail and medical payloads.<br><b>Terrain:</b> Remote and mountainous zones.",
+                "interview_questions": "How can drone logistics help improve disaster response in disaster-prone regions?"
+            },
+            {
+                "id": 15,
+                "category": "Communications",
+                "title": "TEC Finalizes Service Quality Benchmarks for Advanced Satellite Communication",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Satellite Communication", "Telecom"],
+                "why_in_news": "The Telecommunication Engineering Centre (TEC) organized a workshop to establish service quality and spectrum benchmarks for LEO satellite networks.",
+                "news_summary": "The standards-setting framework aligns space and telecom regulations, setting quality metrics for high-speed satellite broadband to prepare for the commercial launch of LEO satellite services in India.",
+                "core_tech": "<b>LEO Satellite Communication:</b> Deploying satellite constellations at altitudes of 500-1,500 km to provide broadband connections with low latency (20-40ms) compared to deep geostationary systems.<br><br><b>Analogy:</b> Connecting to a local router orbiting close to Earth, providing responsive speeds compared to traditional satellites that operate from distant orbits.",
+                "prelims_notes": "<b>TEC:</b> Premier standards-setting technical body under the Department of Telecommunications (DoT).<br><b>LEO Constellations:</b> Low-altitude satellites delivering high-speed, low-latency broadband.",
+                "prelims_traps": "LEO satellite signals have higher latency than geostationary systems because they orbit further away (False, LEO satellites orbit closer to Earth, significantly reducing latency).",
+                "relevance_india": "<b>Connectivity:</b> Delivers reliable high-speed broadband to remote villages, border outposts, and deep-sea maritime channels.",
+                "challenges_risks": "Orbital congestion from expanding commercial LEO constellations increases collision risks.",
+                "gov_initiatives": "Indian Space Policy 2023, Telecommunications Act 2023.",
+                "mains_value_add": "<b>Keywords:</b> Low-Latency Satcom, Space-Terrestrial Convergence, Universal Broadband Coverage.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Low-Earth Orbit (LEO) satellites generally operate within which altitude range?<br>(a) 160 km to 2,000 km<br>(b) 5,000 km to 10,000 km<br>(c) 20,000 km to 24,000 km<br>(d) 35,000 km to 36,000 km<br><i>Ans: (a)</i><br><br><b>Mains:</b> Evaluate the strategic benefits and regulatory challenges of introducing commercial LEO satellite broadband services in India.",
+                "one_page_revision": "<b>What:</b> TEC standards for Satellite 5G/6G NTN.<br><b>Focus:</b> Latency and quality of service benchmarks for LEO satcom.<br><b>Regulator:</b> TEC (DoT).",
+                "interview_questions": "How can we balance allocation of satellite spectrum between national defense and private operators?"
+            },
+
+            // -------------------------------------------------------------
+            // DEPARTMENT OF SPACE
+            // -------------------------------------------------------------
+            {
+                "id": 16,
+                "category": "Space",
+                "title": "Private Industry Investment in Indian Space Sector Secures Massive Surge",
+                "pib_source_date": "June 11, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Space Economy", "IN-SPACe", "Private Sector"],
+                "why_in_news": "IN-SPACe announced a significant rise in private sector investment and commercial launches led by domestic aerospace startups.",
+                "news_summary": "The rise in investment follows private space reforms, showing growth in domestic satellite building, private rocket development, and space application startups. The funding supports India's push to grow its share of the global space economy.",
+                "core_tech": "<b>Sovereign Launch Capability:</b> Designing and manufacturing domestic, modular small satellite launch vehicles (SSLVs) optimized for fast turnaround cycles and custom commercial launch orbits.<br><br><b>Analogy:</b> Shifting from heavy, public transport buses to private, on-demand taxi services for placing small satellites into customized orbits.",
+                "prelims_notes": "<b>IN-SPACe:</b> Indian National Space Promotion and Authorization Center, an autonomous single-window agency under the Department of Space.<br><b>NSIL:</b> NewSpace India Limited, the commercial arm of ISRO.",
+                "prelims_traps": "IN-SPACe operates directly under the Indian Air Force military command (False, it is an autonomous civilian agency under the Department of Space).",
+                "relevance_india": "<b>Economic:</b> Increases India’s share in the global space services and satellite launch markets.",
+                "challenges_risks": "Space technologies are highly capital-intensive and face long, complex development timelines.",
+                "gov_initiatives": "Indian Space Policy 2023, FDI policy liberalization in space sector.",
+                "mains_value_add": "<b>Keywords:</b> Space Economy, Modular Launch Platforms, Aerospace Startups, Single-Window Clearance.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which agency acts as the single-window clearance point for private sector space activities in India?<br>(a) ISRO<br>(b) NSIL<br>(c) IN-SPACe<br>(d) Antrix Corporation<br><i>Ans: (c)</i><br><br><b>Mains:</b> Analyze how opening the space sector to private investment can accelerate technological innovation and economic growth in India.",
+                "one_page_revision": "<b>What:</b> Rising private space investments.<br><b>Enabler:</b> IN-SPACe single-window approvals.<br><b>Goal:</b> Expand India's share in the global space economy.",
+                "interview_questions": "What steps can India take to attract global venture capital into its deep tech aerospace sector?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF DEFENCE
+            // -------------------------------------------------------------
+            {
+                "id": 17,
+                "category": "Defence",
+                "title": "Successful Flight Test of New-Generation RudraM-II Air-to-Surface Anti-Radiation Missile",
+                "pib_source_date": "June 2, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Air-to-Surface Missile", "DRDO"],
+                "why_in_news": "DRDO successfully test-fired the RudraM-II air-to-surface missile from a Su-30MKI fighter aircraft off the coast of Odisha.",
+                "news_summary": "The test verified the missile's advanced propulsion, guidance system, and seek algorithms. RudraM-II is designed to suppress enemy air defenses by targeting and neutralizing radar systems.",
+                "core_tech": "<b>Passive Radar Homing Seeker:</b> Detects, tracks, and homes in on radio frequency emissions from enemy radar systems, even if the radar is turned off during flight.<br><br><b>Analogy:</b> It acts like an electronic tracker that follows the sound of a distant megaphone, guiding itself directly to the broadcast source.",
+                "prelims_notes": "<b>RudraM-II:</b> Indigenously developed solid-fueled anti-radiation missile.<br><b>Carrier Platform:</b> Integrated with Su-30MKI multirole fighter jets.",
+                "prelims_traps": "RudraM-II is a submarine-launched ballistic missile designed for nuclear deterrence (False, it is an air-to-surface anti-radiation missile designed to suppress radar systems).",
+                "relevance_india": "<b>Strategic:</b> Enhances tactical defense capabilities by enabling suppression of enemy air defenses (SEAD).",
+                "challenges_risks": "Tracking highly mobile radar systems that shift frequencies rapidly.",
+                "gov_initiatives": "Atmanirbhar Bharat in defense manufacturing, Technology Development Fund.",
+                "mains_value_add": "<b>Keywords:</b> Anti-Radiation Systems, SEAD Missions, Air Superiority, Precision Strike.",
+                "upsc_questions": "<b>Prelims MCQ:</b> RudraM-II, developed by DRDO, is primarily designed as which type of weapon system?<br>(a) Submarine-launched cruise missile.<br>(b) Air-to-surface anti-radiation missile.<br>(c) Anti-tank guided missile.<br>(d) Man-portable air-defense system.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Explain the strategic role of anti-radiation missiles in modern air combat operations and their importance for national defense.",
+                "one_page_revision": "<b>What:</b> RudraM-II test-flight.<br><b>Type:</b> Anti-radiation air-to-surface missile.<br><b>Objective:</b> Target enemy radar and communication nodes.",
+                "interview_questions": "Why is the indigenous development of precision-guided seekers critical for defense self-reliance?"
+            },
+            {
+                "id": 18,
+                "category": "Defence",
+                "title": "Ministry of Defence Initiates GNSS Jammer Procurement under Electronic Warfare Roadmap",
+                "pib_source_date": "June 10, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Navigation Warfare", "Electronic Warfare"],
+                "why_in_news": "The Ministry of Defence announced procurement protocols for indigenous GNSS jamming and spoofing systems to strengthen land warfare protection.",
+                "news_summary": "The hardware defends tactical forward units from GPS-guided threats by deploying high-efficiency electronic countermeasures in active combat zones.",
+                "core_tech": "<b>GNSS Jamming & Spoofing:</b> Floods local airspace with radio noise or generates false GPS coordinates to disrupt the navigation systems of enemy drones and precision weapons.<br><br><b>Analogy:</b> Jamming is like using a loud static noise to drown out a speaker's voice. Spoofing is like whispering the wrong directions in someone's ear to make them get lost.",
+                "prelims_notes": "<b>GNSS:</b> Global Navigation Satellite System, including GPS (USA), GLONASS (Russia), Galileo (EU), and NavIC (India).<br><b>Electronic Warfare:</b> Military action involving the use of electromagnetic energy.",
+                "prelims_traps": "GPS jamming completely destroys physical navigation hardware on contact (False, it temporary disrupts signals without physically damaging the hardware).",
+                "relevance_india": "<b>Strategic:</b> Protects forward troop formations and military assets from drone and missile attacks.",
+                "challenges_risks": "Ensuring jamming signals do not accidentally interfere with friendly communication networks.",
+                "gov_initiatives": "iDEX Electronic Warfare challenges, Technology Development Fund projects.",
+                "mains_value_add": "<b>Keywords:</b> Electronic Countermeasures, Navigation Warfare, Spoofing Defense, Signal Dominance.",
+                "upsc_questions": "<b>Prelims MCQ:</b> In electronic warfare, 'spoofing' refers to which of the following?<br>(a) Damaging physical network servers.<br>(b) Intercepting tactical radio messages.<br>(c) Transmitting false GPS coordinates to misdirect navigation systems.<br>(d) Disabling optical sensors using laser beams.<br><i>Ans: (c)</i><br><br><b>Mains:</b> Discuss the growing importance of electronic and navigation warfare systems in modern combat scenarios.",
+                "one_page_revision": "<b>What:</b> GNSS Jammer procurement plan.<br><b>Focus:</b> Electronic countermeasures against GPS-guided weapons.<br><b>Target:</b> Defense against spoofing and drone navigation.",
+                "interview_questions": "How can we balance civilian navigation needs with electronic warfare deployments in border regions?"
+            },
+            {
+                "id": 19,
+                "category": "Defence",
+                "title": "iDEX Partners with Defence Startups to Accelerate Advanced Materials Development",
+                "pib_source_date": "June 12, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["iDEX", "Defence Startups"],
+                "why_in_news": "iDEX signed new contracts with local defense startups to research and develop lightweight carbon composites and radar-absorbing stealth coatings.",
+                "news_summary": "These development projects aim to reduce structural aircraft weight and lower the radar cross-sections of domestic defense transport platforms.",
+                "core_tech": "<b>Radar Absorbing Materials (RAM):</b> Materials designed to absorb incident radar waves rather than reflect them back to the radar antenna, reducing the vehicle's radar signature.<br><br><b>Analogy:</b> It acts like a dark velvet cloth that absorbs light waves rather than reflecting them, making the object difficult to see in the dark.",
+                "prelims_notes": "<b>iDEX:</b> Innovations for Defence Excellence, launched by the Prime Minister in 2018.<br><b>Operator:</b> Defence Innovation Organisation (DIO), a non-profit company under Section 8.",
+                "prelims_traps": "iDEX is a division of DRDO directly managed by military officials (False, it is run by the Defence Innovation Organisation under the Ministry of Defence).",
+                "relevance_india": "<b>Economic:</b> Builds a competitive local defense ecosystem and reduces imports of high-grade specialized materials.",
+                "challenges_risks": "Scaling up production of high-grade specialized materials in domestic factories.",
+                "gov_initiatives": "Defence Acquisition Procedure (DAP) reforms, Technology Development Fund.",
+                "mains_value_add": "<b>Keywords:</b> Stealth Technology, Advanced Materials, Defence Ecosystem, Carbon Composites.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Innovations for Defence Excellence (iDEX) is managed and funded by which organization?<br>(a) DRDO<br>(b) Indian Air Force<br>(c) Defence Innovation Organisation (DIO)<br>(d) ISRO<br><i>Ans: (c)</i><br><br><b>Mains:</b> Evaluate the role of startups and private industry in achieving self-reliance in advanced defense manufacturing in India.",
+                "one_page_revision": "<b>What:</b> iDEX stealth material contracts.<br><b>Focus:</b> Radar-absorbing coatings and lightweight carbon composites.<br><b>Framework:</b> iDEX (Defence Innovation Organisation).",
+                "interview_questions": "What are the key policy reforms needed to integrate small startups into formal defense procurement systems?"
+            },
+            {
+                "id": 20,
+                "category": "Defence",
+                "title": "DRDO Completes High-Altitude Trials of Advanced Weapon System Complex",
+                "pib_source_date": "June 12, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["DRDO", "Weapons"],
+                "why_in_news": "DRDO successfully finished high-altitude trials of its modular, advanced precision-guided weapon system complex in mountain terrains.",
+                "news_summary": "The test verified accurate target acquisition and terminal guidance under sub-zero temperatures and thin atmospheric pressure profiles.",
+                "core_tech": "<b>Inertial Navigation Guidance:</b> Uses motion sensors (accelerometers) and rotation sensors (gyroscopes) to calculate a system's position and orientation continuously without relying on external signals.<br><br><b>Analogy:</b> It acts like walking blindfolded through a room while counting your exact steps and turns, tracking your position without needing to open your eyes.",
+                "prelims_notes": "<b>DRDO:</b> Defence Research and Development Organisation.<br><b>Terrain:</b> Tested in high-altitude environments (Sikkim/Ladakh ranges) to verify sub-zero performance.",
+                "prelims_traps": "Inertial guidance systems require a continuous connection to GPS or regional satellites to function (False, they operate independently of external signals).",
+                "relevance_india": "<b>Strategic:</b> Enhances target accuracy and defense capabilities in rugged border and mountainous terrains.",
+                "challenges_risks": "Ensuring precise calibration of guidance systems under extreme sub-zero weather conditions.",
+                "gov_initiatives": "Atmanirbhar Bharat, Technology Development Fund (TDF) schemes.",
+                "mains_value_add": "<b>Keywords:</b> Mountain Warfare, Precision Guidance, Inertial Navigation, Operational Readiness.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Inertial Navigation Systems are primarily valued in defense because:<br>(a) They require solar energy to function.<br>(b) They operate independently of external signals, making them immune to jamming.<br>(c) They are low-cost components.<br>(d) They only operate in maritime environments.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the technological challenges of operating high-precision weapon systems in extreme high-altitude environments.",
+                "one_page_revision": "<b>What:</b> DRDO high-altitude trials.<br><b>Focus:</b> Advanced weapon guidance systems.<br><b>Location:</b> Mountain terrains.",
+                "interview_questions": "How can India enhance its defense capabilities in mountainous border regions using advanced technology?"
+            },
+            {
+                "id": 21,
+                "category": "Defence",
+                "title": "DRDO Showcases Next-Generation Indigenous Air-Defence Missile Capabilities",
+                "pib_source_date": "June 13, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Indigenous Defence Tech"],
+                "why_in_news": "DRDO demonstrated new tracking and target interception capabilities of its indigenously developed short-range air defense systems (VSHORADS).",
+                "news_summary": "The systems utilize upgraded dual-band infrared seekers to neutralize low-altitude aerial threats and fast-moving unmanned drone systems.",
+                "core_tech": "<b>Dual-Band Infrared Seeker:</b> Detects target heat signatures on two different infrared wavelengths. This helps distinguish real targets from decoy flares and background environmental heat noise.<br><br><b>Analogy:</b> It acts like a thermal camera that can see both body heat and fire, allowing it to ignore decoy flares and focus on tracking the aircraft engine.",
+                "prelims_notes": "<b>VSHORADS:</b> Very Short Range Air Defence System, a man-portable missile system designed to defend against low-altitude threats.",
+                "prelims_traps": "VSHORADS are heavy, truck-mounted long-range ballistic missile systems (False, they are lightweight, man-portable short-range air defense systems).",
+                "relevance_india": "<b>Strategic:</b> Secures forward combat units from low-altitude drone and helicopter threats.",
+                "challenges_risks": "Distinguishing target heat signatures from ground heat and flares in hot desert conditions.",
+                "gov_initiatives": "Make in India, Defense Indigenization lists.",
+                "mains_value_add": "<b>Keywords:</b> Low-Altitude Defense, Infrared Homing, VSHORADS, Tactical Air Shield.",
+                "upsc_questions": "<b>Prelims MCQ:</b> What is the primary role of a 'Dual-Band Infrared Seeker' in modern missiles?<br>(a) Increasing the physical flight range.<br>(b) Overcoming decoy flares and thermal interference during target tracking.<br>(c) Enabling laser communication with ground stations.<br>(d) Generating solar power during flight.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the challenge of low-altitude aerial threats and discuss the technological solutions required for effective tactical air defense.",
+                "one_page_revision": "<b>What:</b> VSHORADS missile testing.<br><b>Focus:</b> Upgraded dual-band infrared guidance.<br><b>Objective:</b> Defense against low-altitude drone and aerial threats.",
+                "interview_questions": "How can man-portable air defense systems help protect military forces from small combat drones?"
+            },
+            {
+                "id": 22,
+                "category": "Defence",
+                "title": "DRDO Conducts Flight Test of Long-Range Land Attack Cruise Missile (LRLACM)",
+                "pib_source_date": "June 15, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Cruise Missile"],
+                "why_in_news": "DRDO test-fired the Long-Range Land Attack Cruise Missile (LRLACM) from an integrated test range, confirming target hits at extended ranges.",
+                "news_summary": "The flight validated low-altitude terrain-following flight profiles, gas-turbine propulsion efficiency, and precision waypoint terminal guidance.",
+                "core_tech": "<b>Terrain Contour Matching (TERCOM):</b> Matches radar measurements of the ground altitude with pre-stored maps to guide the missile at extremely low altitudes.<br><br><b>Analogy:</b> Like driving a car along a road in the dark by matching what you see in the headlights with a pre-drawn map of the curves and hills.",
+                "prelims_notes": "<b>LRLACM:</b> Indigenously developed subsonic cruise missile.<br><b>Guidance:</b> Combines TERCOM, GPS/NavIC updates, and an active radio-frequency terminal seeker.",
+                "prelims_traps": "LRLACM is a rocket-propelled ballistic missile that exits the earth's atmosphere during flight (False, it is a jet-propelled, subsonic cruise missile that flies at low altitudes).",
+                "relevance_india": "<b>Strategic:</b> Enhances long-range conventional attack capabilities and tactical deterrence.",
+                "challenges_risks": "Ensuring precise navigation tracking at extremely low terrain-following altitudes.",
+                "gov_initiatives": "Defence Acquisition Council (DAC) clearances, Technology Development Fund.",
+                "mains_value_add": "<b>Keywords:</b> Subsonic Cruise, Terrain Following, TERCOM Navigation, Tactical Deterrence.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which navigation technology matches ground altitude details with pre-stored maps to guide cruise missiles?<br>(a) Inertial Drift correction.<br>(b) TERCOM (Terrain Contour Matching).<br>(c) GPS spoofing.<br>(d) LiDAR calibration.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Compare cruise and ballistic missile systems, explaining their strategic roles in India's regional deterrence posture.",
+                "one_page_revision": "<b>What:</b> LRLACM cruise missile testing.<br><b>Focus:</b> Low-altitude terrain-following flight and precision guidance.<br><b>Enabler:</b> TERCOM.",
+                "interview_questions": "What are the strategic advantages of cruise missiles over ballistic missiles in modern conventional conflicts?"
+            },
+            {
+                "id": 23,
+                "category": "Defence",
+                "title": "India’s Annual Defence Production Touches Record ₹1.78 Lakh Crore Milestone",
+                "pib_source_date": "June 17, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Defence Manufacturing", "Atmanirbhar Bharat"],
+                "why_in_news": "The Ministry of Defence announced that the total value of domestic defense production touched a record ₹1.78 Lakh Crore in FY 2025-26.",
+                "news_summary": "Driven by policy reforms, positive indigenization lists, and growth in exports, India has registered a significant surge in domestic private and public defense manufacturing.",
+                "core_tech": "<b>Industrial Systems Integration:</b> Scaling up assembly-line manufacturing and quality control processes across private and public sectors to build complex defense hardware locally.<br><br><b>Analogy:</b> Shifting from buying fully assembled cars from abroad to building your own factories to manufacture and export them.",
+                "prelims_notes": "<b>Milestone:</b> Value of defense production reached ₹1,78,000 crore.<br><b>Driver:</b> Supported by positive indigenization lists restricting imports of specific components.",
+                "prelims_traps": "The growth in production was achieved solely by state-owned defense PSUs with zero private sector participation (False, the private sector and local MSMEs contributed significantly to this growth).",
+                "relevance_india": "<b>Economic:</b> Reduces foreign weapon imports and establishes India as an emerging exporter of defense equipment.",
+                "challenges_risks": "Ensuring consistent quality standards across small MSME component suppliers.",
+                "gov_initiatives": "Defence Industrial Corridors (UP & Tamil Nadu), Defence Acquisition Procedure (DAP) 2020.",
+                "mains_value_add": "<b>Keywords:</b> Positive Indigenization, Defence Exports, Industrial Corridors, Self-reliance.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which states host India's two dedicated Defence Industrial Corridors?<br>(a) Maharashtra & Gujarat<br>(b) Uttar Pradesh & Tamil Nadu<br>(c) Karnataka & Andhra Pradesh<br>(d) Punjab & Haryana<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the policy reforms and structural steps that have driven the growth of India's domestic defense manufacturing sector.",
+                "one_page_revision": "<b>What:</b> Record domestic defense production value.<br><b>Value:</b> ₹1.78 Lakh Crore.<br><b>Key Driver:</b> Positive Indigenization Lists and private industry expansion.",
+                "interview_questions": "How can India continue to scale up its defense exports to become a key global supplier?"
+            },
+            {
+                "id": 24,
+                "category": "Defence",
+                "title": "Indian Coast Guard Inducts Indigenously Manufactured Air Cushion Vehicle (Hovercraft)",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Coast Guard", "Indigenous Manufacturing"],
+                "why_in_news": "The Indian Coast Guard inducted an indigenously designed and built Air Cushion Vehicle (ACV) to improve shallow-water coastal security.",
+                "news_summary": "The amphibious hovercraft enables high-speed patrolling and search operations across mudflats, shallow waters, and marshy coastal delta systems.",
+                "core_tech": "<b>Amphibious Air-Cushion Propulsion:</b> Uses powerful fans to blow air downward, creating a high-pressure air pocket (cushion) that lifts the craft off the ground, allowing it to glide over water and land.<br><br><b>Analogy:</b> It acts like a puck on an air hockey table, floating on a thin layer of air to glide over smooth and rough surfaces.",
+                "prelims_notes": "<b>Hovercraft (ACV):</b> Amphibious vehicle capable of traveling over water, mud, sand, and marshy ground.<br><b>Operator:</b> Indian Coast Guard.",
+                "prelims_traps": "Air Cushion Vehicles are designed only for deep-ocean underwater navigation (False, they glide on a cushion of air over land, water, and mudflats).",
+                "relevance_india": "<b>Strategic:</b> Strengthens security and prevents illegal entries across vulnerable coastal marshlands like the Rann of Kutch.",
+                "challenges_risks": "High fuel consumption and maintenance demands in salty, high-corrosion environments.",
+                "gov_initiatives": "Make in India, Coast Guard modernization programs.",
+                "mains_value_add": "<b>Keywords:</b> Amphibious Patrolling, Coastal Security, Marshland Surveillance, Hovercraft Induction.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Air Cushion Vehicles (Hovercrafts) are uniquely suited for which environment?<br>(a) Deep-sea submarine tracking.<br>(b) Amphibious terrain, shallow marshlands, and mudflats.<br>(c) High-altitude mountain surveillance.<br>(d) Under-ice polar exploration.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the security challenges of India's marshy and deltaic coastal regions, explaining how amphibious technologies help address them.",
+                "one_page_revision": "<b>What:</b> Coast Guard Hovercraft induction.<br><b>Type:</b> Indigenously built Air Cushion Vehicle (ACV).<br><b>Utility:</b> Marshland and shallow-water coastal patrolling.",
+                "interview_questions": "What are the unique challenges of securing India's marshy and deltaic coastlines?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF COMMERCE
+            // -------------------------------------------------------------
+            {
+                "id": 25,
+                "category": "Commerce",
+                "title": "Department for Promotion of Industry and Internal Trade Initiates WPI Base Year Revision",
+                "pib_source_date": "June 2, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Inflation", "WPI", "Economic Metrics"],
+                "why_in_news": "DPIIT initiated the process to revise the base year of the Wholesale Price Index (WPI) to update the inflation index basket.",
+                "news_summary": "The revision will update the commodity basket, adjust category weightages, and introduce modern goods to make WPI reflections more representative of current economic realities.",
+                "core_tech": "<b>Statistical Indexing:</b> Regrouping commodity baskets and recalculating base-year weights to measure wholesale price changes accurately.<br><br><b>Analogy:</b> Updating your grocery shopping list to remove outdated items and add new household goods to track your monthly budget accurately.",
+                "prelims_notes": "<b>WPI:</b> Wholesale Price Index, compiled and published by the Office of Economic Adviser (DPIIT), Ministry of Commerce & Industry.<br><b>Base Year:</b> Currently set at 2011-12, under revision to include modern industrial and technology goods.",
+                "prelims_traps": "WPI data is compiled and published directly by the National Statistical Office under MoSPI (False, WPI is compiled by the Office of Economic Adviser, DPIIT).",
+                "relevance_india": "<b>Economic:</b> Improves the accuracy of inflation data, helping policymakers make better monetary and fiscal decisions.",
+                "challenges_risks": "Gathering historical wholesale price data for newly introduced manufacturing and technology goods.",
+                "gov_initiatives": "Macroeconomic data harmonization reforms.",
+                "mains_value_add": "<b>Keywords:</b> Base Year Revision, Commodity Basket, Inflation Tracking, Economic Indicators.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Wholesale Price Index (WPI) data in India is compiled and published by:<br>(a) NSO (National Statistical Office).<br>(b) Office of Economic Adviser, DPIIT.<br>(c) RBI Department of Statistics.<br>(d) Ministry of Finance.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Explain why regular revisions of macroeconomic indices like WPI and CPI are necessary to support sound economic policymaking.",
+                "one_page_revision": "<b>What:</b> WPI Base Year Revision.<br><b>By:</b> Office of Economic Adviser, DPIIT.<br><b>Goal:</b> Make inflation tracking more representative of the current economy.",
+                "interview_questions": "How does updating inflation indices help the central bank make better monetary policy decisions?"
+            },
+            {
+                "id": 26,
+                "category": "Commerce",
+                "title": "Ministry of Commerce Launches 'BHAVYA' Trade Facilitation and Logistics Portal",
+                "pib_source_date": "June 8, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Trade Facilitation", "Digital Governance"],
+                "why_in_news": "The Ministry of Commerce launched the 'BHAVYA' portal to digitize import-export document workflows and trade logistics approvals.",
+                "news_summary": "The portal acts as a single-window interface, simplifying clearance processes and reducing transaction costs and delays for domestic exporters.",
+                "core_tech": "<b>SaaS and API Integrations:</b> Connects trade databases, custom systems, and port clearance networks to enable secure, digital document processing.<br><br><b>Analogy:</b> It acts like an express check-in counter that processes all your papers and boarding passes at once, bypassing separate queues.",
+                "prelims_notes": "<b>BHAVYA:</b> Unified logistics and trade facilitation single-window portal.<br><b>Objective:</b> Reduce logistics costs to align with global trade benchmarks.",
+                "prelims_traps": "BHAVYA is a physical high-speed railway project for cargo transport (False, it is a digital single-window trade facilitation and logistics portal).",
+                "relevance_india": "<b>Economic:</b> Lowers logistics costs and enhances India's competitiveness in global trade.",
+                "challenges_risks": "Ensuring secure, fast API links with diverse customs and ports systems.",
+                "gov_initiatives": "National Logistics Policy (NLP), PM GatiShakti program.",
+                "mains_value_add": "<b>Keywords:</b> Logistics Cost, Single-Window Clearance, Trade Facilitation, Digital Customs.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The primary objective of the newly launched BHAVYA portal is:<br>(a) Agricultural seed tracking.<br>(b) Digital single-window trade facilitation and logistics integration.<br>(c) Space startup monitoring.<br>(d) Coal block allocation bidding.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the impact of trade digitization portals on logistics efficiency and India's overall ease of doing business rankings.",
+                "one_page_revision": "<b>What:</b> BHAVYA portal launch.<br><b>Focus:</b> Single-window digital logistics and trade clearances.<br><b>Goal:</b> Lower transaction costs for exporters.",
+                "interview_questions": "What are the major bottlenecks in India's logistics network that affect export competitiveness?"
+            },
+            {
+                "id": 27,
+                "category": "Commerce",
+                "title": "GeM Portal Expands Procurement Integration to Strengthen Local MSME Ecosystem",
+                "pib_source_date": "June 9, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Digital Procurement", "MSMEs"],
+                "why_in_news": "The Government e-Marketplace (GeM) expanded API support tools to help regional MSMEs list and bid on government contracts more easily.",
+                "news_summary": "The upgrades simplify product registration and bidding workflows, making government procurement processes more accessible and competitive.",
+                "core_tech": "<b>Automated Cataloguing Systems:</b> AI-assisted tools that standardize product listings and specifications, enabling small sellers to list goods on the procurement portal quickly.<br><br><b>Analogy:</b> A smart template that helps a small shop owner list their inventory online in a standardized format, making it searchable for large buyers.",
+                "prelims_notes": "<b>GeM:</b> Government e-Marketplace, managed under the Ministry of Commerce & Industry.<br><b>Rule:</b> Public procurement policy mandates that government departments procure a minimum of 25% of their annual purchases from MSMEs.",
+                "prelims_traps": "MSMEs are prohibited from bidding on high-value public procurement tenders on the GeM portal (False, GeM is designed to enable MSMEs to participate in both low and high-value government bids).",
+                "relevance_india": "<b>Economic:</b> Democratizes public procurement, opening wider government markets for small regional enterprises.",
+                "challenges_risks": "Training small artisans on digital catalog uploads and formal bidding procedures.",
+                "gov_initiatives": "MSME Sambandh, Public Procurement Policy for MSEs Order 2012.",
+                "mains_value_add": "<b>Keywords:</b> Inclusive Procurement, MSME Sambandh, Catalog Standardization, Bid Participation.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The public procurement policy mandates that government departments procure what minimum percentage of their annual purchases from MSMEs?<br>(a) 10%<br>(b) 15%<br>(c) 25%<br>(d) 40%<br><i>Ans: (c)</i><br><br><b>Mains:</b> Evaluate how digital platforms like GeM can help make public procurement markets more inclusive and transparent.",
+                "one_page_revision": "<b>What:</b> GeM portal upgrades for MSMEs.<br><b>Requirement:</b> 25% mandatory public procurement from MSMEs.<br><b>Mechanism:</b> Simplified digital cataloging.",
+                "interview_questions": "How can the government protect small MSMEs from unfair competition from large sellers on digital procurement platforms?"
+            },
+            {
+                "id": 28,
+                "category": "Commerce",
+                "title": "ONDC Launches 'DigiDukaan' Initiative to Digitalize Local Kirana Stores",
+                "pib_source_date": "June 12, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["ONDC", "FMCG", "Kirana Digitalisation"],
+                "why_in_news": "ONDC launched 'DigiDukaan' to help neighborhood Kirana stores digitize inventories and join the open e-commerce network.",
+                "news_summary": "The initiative offers simplified inventory tools, digital ledger features, and order management links, enabling small retailers to reach local digital customers.",
+                "core_tech": "<b>Open Protocol Network APIs:</b> Standardized network rules that allow different retail, payment, and delivery apps to interact seamlessly, avoiding the need for proprietary platform software.<br><br><b>Analogy:</b> It acts like an email network, allowing people using different service providers (like Gmail and Yahoo) to exchange messages directly, bypassing closed platforms.",
+                "prelims_notes": "<b>ONDC:</b> Open Network for Digital Commerce, a non-profit Section 8 company supported by DPIIT.<br><b>Focus:</b> Reducing e-commerce platform monopolies and supporting small retailers.",
+                "prelims_traps": "ONDC is a state-owned, centralized e-commerce app that competes directly with private platforms (False, it is an open network protocol that connects diverse private and public applications).",
+                "relevance_india": "<b>Economic:</b> Helps small retail businesses compete with centralized e-commerce platforms, preserving local retail jobs.",
+                "challenges_risks": "Sustaining regular system usage among less tech-savvy local shopkeepers.",
+                "gov_initiatives": "Digital India retail and commerce enablement programs.",
+                "mains_value_add": "<b>Keywords:</b> Open Network Protocol, Platform De-monopolization, Kirana Digitalization, E-Commerce Inclusion.",
+                "upsc_questions": "<b>Prelims MCQ:</b> ONDC is structured as which type of platform?<br>(a) Private, proprietary e-commerce application.<br>(b) Open-source, decentralized network protocol for digital commerce.<br>(c) State-owned monopoly delivery service.<br>(d) Database solely for taxing online transactions.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss how ONDC's open-protocol model can level the playing field for micro-retailers in the digital economy.",
+                "one_page_revision": "<b>What:</b> ONDC's DigiDukaan initiative.<br><b>Objective:</b> Connect neighborhood Kirana stores to open e-commerce networks.<br><b>Structure:</b> Open-protocol APIs.",
+                "interview_questions": "What are the major barriers small shopkeepers face when trying to transition to digital sales platforms?"
+            },
+            {
+                "id": 29,
+                "category": "Commerce",
+                "title": "India and UK Progress Digital Trade Negotiations under UK-India CETA",
+                "pib_source_date": "June 17, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-II",
+                "themes": ["Digital Trade", "Innovation"],
+                "why_in_news": "Trade officials completed a round of talks for the UK-India Comprehensive Economic Partnership Agreement, prioritizing digital trade, cross-border data standards, and innovation frameworks.",
+                "news_summary": "The negotiations aim to simplify data flow standards, recognize electronic signature frameworks mutually, and reduce regulatory barriers for tech services.",
+                "core_tech": "<b>Interoperable Digital Signature Frameworks:</b> Standardized cryptographic rules that verify digital signatures across different national systems, ensuring legal validity across borders.<br><br><b>Analogy:</b> It acts like a global passport system that allows your official ID to be recognized and accepted at customs checkpoints worldwide.",
+                "prelims_notes": "<b>CETA:</b> Comprehensive Economic Partnership Agreement negotiations between India and the UK.<br><b>Digital Trade:</b> Cross-border trade in digital services, digital software products, and electronic data transfers.",
+                "prelims_traps": "Digital trade agreements completely replace national data protection and data privacy laws (False, trade treaties must align with national data protection and privacy rules like the DPDP Act).",
+                "relevance_india": "<b>Economic:</b> Expands market reach and growth opportunities for Indian IT, consulting, and fintech exports.",
+                "challenges_risks": "Balancing international data flow demands with domestic data localization and privacy mandates.",
+                "gov_initiatives": "DPDP Act compliance pathways in international treaties.",
+                "mains_value_add": "<b>Keywords:</b> Digital Trade Barriers, Data Interoperability, Cross-border Services, Trade Harmonization.",
+                "upsc_questions": "<b>Prelims MCQ:</b> CETA negotiations between India and the UK primarily focus on:<br>(a) Space exploration projects.<br>(b) Bilateral trade, service delivery, and digital economy partnerships.<br>(c) Joint naval hardware building.<br>(d) Agricultural land leases.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate the opportunities and challenges of aligning cross-border digital trade rules with national data localization policies.",
+                "one_page_revision": "<b>What:</b> India-UK CETA digital trade talks.<br><b>Focus:</b> Cross-border data flows, e-signature recognition, and digital services trade.<br><b>Agreement:</b> CETA.",
+                "interview_questions": "How can India protect its local data sovereignty while participating in international digital trade agreements?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF FINANCE
+            // -------------------------------------------------------------
+            {
+                "id": 30,
+                "category": "Finance",
+                "title": "NPCI International Expands UPI Cross-Border Payments System into Cambodia",
+                "pib_source_date": "June 3, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["FinTech", "UPI", "Digital Payments"],
+                "why_in_news": "NPCI International Payments Limited (NIPL) signed an agreement with the National Bank of Cambodia to enable UPI cross-border QR code payments.",
+                "news_summary": "The agreement allows Indian travelers to make instant, mobile-based payments in Cambodia using local currency conversions, and vice versa.",
+                "core_tech": "<b>Bilateral payment API bridges:</b> Technical interfaces that connect separate national real-time payment networks, allowing instant currency conversion and transaction settlement.<br><br><b>Analogy:</b> It acts like an international phone call patch that connects two separate networks, allowing people on both sides to talk directly and instantly.",
+                "prelims_notes": "<b>NIPL:</b> Wholly-owned subsidiary of the National Payments Corporation of India (NPCI) for international expansion.<br><b>UPI:</b> Unified Payments Interface, India’s instant real-time payment system.",
+                "prelims_traps": "UPI international transactions require a credit card terminal to complete currency exchanges (False, transactions are processed directly through mobile apps using QR code links).",
+                "relevance_india": "<b>Economic:</b> Reduces currency conversion fees for travelers and supports wider international adoption of India's UPI technology.",
+                "challenges_risks": "Managing real-time exchange rate volatility across multi-country transactions.",
+                "gov_initiatives": "UPI International expansion roadmaps.",
+                "mains_value_add": "<b>Keywords:</b> Financial Integration, UPI Internationalization, FinTech Diplomacy, Cross-Border Settlement.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which entity manages international expansion and API licensing for UPI abroad?<br>(a) RBI directly.<br>(b) NPCI International Payments Limited (NIPL).<br>(c) Ministry of External Affairs.<br>(d) SEBI.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the role of India's digital payment solutions as an instrument of economic diplomacy and financial integration.",
+                "one_page_revision": "<b>What:</b> UPI launch in Cambodia.<br><b>By:</b> NIPL and National Bank of Cambodia.<br><b>Benefit:</b> Real-time, mobile-based cross-border payments.",
+                "interview_questions": "How can expanding UPI globally help reduce reliance on traditional cross-border messaging systems?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF CONSUMER AFFAIRS
+            // -------------------------------------------------------------
+            {
+                "id": 31,
+                "category": "Consumer Affairs",
+                "title": "CCPA Issues Clear Directives Targeting 'Dark Patterns' on E-Commerce Platforms",
+                "pib_source_date": "June 3, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Consumer Protection", "Digital Economy"],
+                "why_in_news": "The Central Consumer Protection Authority (CCPA) issued directives to penalize e-commerce platforms using manipulative 'dark patterns'.",
+                "news_summary": "The guidelines ban deceptive design practices, such as subscription traps, forced cart additions, and false countdown timers, to protect consumer choices.",
+                "core_tech": "<b>UI/UX Compliance Tracking:</b> Monitoring design rules to detect deceptive interface patterns designed to manipulate consumer choices.<br><br><b>Analogy:</b> It is like banning grocery stores from placing items in your shopping cart when you look away, forcing you to remove them before paying.",
+                "prelims_notes": "<b>CCPA:</b> Statutory body established under the Consumer Protection Act, 2019.<br><b>Dark Patterns:</b> Manipulative user interface designs that trick users into decisions they did not intend.",
+                "prelims_traps": "Dark Patterns refer to using dark colors or night-mode themes on e-commerce websites (False, they refer to manipulative, deceptive layout and purchase designs).",
+                "relevance_india": "<b>Economic:</b> Protects consumer rights and builds digital market trust by ensuring transparent online purchasing experiences.",
+                "challenges_risks": "Identifying and regulating subtle, subjective variations in website interface designs.",
+                "gov_initiatives": "National Consumer Helpline, Consumer Protection (E-Commerce) Rules.",
+                "mains_value_add": "<b>Keywords:</b> Dark Patterns, Consumer Rights, User Autonomy, E-Commerce Transparency.",
+                "upsc_questions": "<b>Prelims MCQ:</b> Which of the following is defined as a 'Dark Pattern' in digital e-commerce?<br>(a) Using night-mode backgrounds.<br>(b) Manipulative interface design choices that trick users into unintended actions.<br>(c) Selling products at high wholesale volume discounts.<br>(d) Enforcing high-grade password encryption.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate the regulatory frameworks needed to address manipulative design practices (dark patterns) on digital consumer platforms.",
+                "one_page_revision": "<b>What:</b> CCPA guidelines on Dark Patterns.<br><b>Focus:</b> Ban deceptive e-commerce designs (subscription traps, forced purchases).<br><b>Authority:</b> CCPA (Consumer Protection Act 2019).",
+                "interview_questions": "How can regulatory agencies enforce guidelines against design manipulation without restricting UI design creativity?"
+            },
+            {
+                "id": 32,
+                "category": "Consumer Affairs",
+                "title": "Department of Consumer Affairs Integrates AI Tools into 'e-Jagriti' Dispute Portal",
+                "pib_source_date": "June 7, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-II",
+                "themes": ["e-Governance"],
+                "why_in_news": "The Department of Consumer Affairs integrated AI-powered sorting and drafting models into the 'e-Jagriti' consumer dispute portal.",
+                "news_summary": "The upgrades automate case classifications and flag similar previous court rulings, helping speed up case handling and reduce consumer court backlogs.",
+                "core_tech": "<b>Semantic Search and Legal NLP:</b> AI text analysis models that scan and classify case documents based on meaning, matching them with similar previous cases.<br><br><b>Analogy:</b> An automated clerk that reads incoming case documents, organizes them into folders, and finds similar past cases for the judge to review.",
+                "prelims_notes": "<b>e-Jagriti:</b> Consumer dispute filing and tracking portal.<br><b>National Consumer Disputes Redressal Commission:</b> The apex consumer court body in India.",
+                "prelims_traps": "e-Jagriti is an energy-conservation platform designed to monitor household electricity consumption (False, it is a consumer dispute filing and tracking portal).",
+                "relevance_india": "<b>Governance:</b> Speeds up dispute resolution and simplifies case filing for everyday consumers.",
+                "challenges_risks": "Ensuring AI models maintain logical, objective legal reasoning and avoid bias during automated screening.",
+                "gov_initiatives": "National e-Governance Plan (NeGP), National Consumer Dispute Redressal Commission digitization.",
+                "mains_value_add": "<b>Keywords:</b> Legal NLP, e-Governance, Case Redressal, Judicial Efficiency.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The 'e-Jagriti' portal is associated with which administrative area?<br>(a) Power sector billing.<br>(b) Consumer dispute filing and resolution.<br>(c) Space startup registration.<br>(d) Minor forest produce tracking.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss how integrating artificial intelligence tools can improve efficiency and transparency in administrative dispute resolution systems.",
+                "one_page_revision": "<b>What:</b> AI integration into e-Jagriti portal.<br><b>Objective:</b> Speed up consumer dispute resolution and case classification.<br><b>Mechanism:</b> Legal NLP and semantic search.",
+                "interview_questions": "How can we ensure AI-driven legal search tools do not introduce bias during case evaluations?"
+            },
+            {
+                "id": 33,
+                "category": "Consumer Affairs",
+                "title": "Union Minister Launches Smart Warehousing Initiative for Public Foodgrain Management",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["AgriTech", "IoT"],
+                "why_in_news": "The Union Minister launched a smart warehousing initiative, integrating IoT sensors and real-time trackers into Central Warehousing Corporation (CWC) facilities.",
+                "news_summary": "The systems deploy smart thermal sensors, gas detectors, and automated inventory systems to track grain storage health, reduce storage rot, and optimize food logistics.",
+                "core_tech": "<b>IoT Sensor Networks:</b> Connected sensors that track temperature, humidity, and carbon dioxide levels inside silos, sending real-time data to a central cloud dashboard to flag rot risks.<br><br><b>Analogy:</b> It acts like an automated nurse that checks the vital signs (temperature and humidity) of stored grains and flags any issues before rot spreads.",
+                "prelims_notes": "<b>CWC:</b> Central Warehousing Corporation, established to manage public warehouse facilities.<br><b>FCI:</b> Food Corporation of India, working alongside CWC to manage the public distribution supply chain.",
+                "prelims_traps": "Central Warehousing Corporation operates purely as a private real estate agency with zero government oversight (False, it is a public sector undertaking under the Ministry of Consumer Affairs, Food and Public Distribution).",
+                "relevance_india": "<b>Economic:</b> Minimizes post-harvest storage losses, supporting national food security and reducing logistics costs.",
+                "challenges_risks": "Installing and maintaining sensitive electronic IoT sensors in remote, dusty warehouse environments.",
+                "gov_initiatives": "National Food Security Act (NFSA), Depot Online Project.",
+                "mains_value_add": "<b>Keywords:</b> Smart Warehousing, Post-Harvest Mitigation, Food Security, Supply-Chain IoT.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The integration of IoT thermal and gas sensors in public warehouses is primarily aimed at:<br>(a) Generating clean solar energy.<br>(b) Tracking grain health and reducing post-harvest storage rot.<br>(c) Mining data for trade taxation.<br>(d) Securing physical doors using biometric keys.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Assess the role of digital warehousing technologies in reducing wastage and improving supply chain resilience in India's public distribution system.",
+                "one_page_revision": "<b>What:</b> Smart Warehousing Initiative.<br><b>Tech:</b> IoT sensor networks tracking temperature and humidity in silos.<br><b>Impact:</b> Reduce post-harvest rot in CWC/FCI depots.",
+                "interview_questions": "What steps can India take to modernize its public grain distribution and storage infrastructure?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF AGRICULTURE
+            // -------------------------------------------------------------
+            {
+                "id": 34,
+                "category": "Agriculture",
+                "title": "Ministry of Agriculture Collaborates with WhatsApp to Launch AI-Powered Advisory Services",
+                "pib_source_date": "June 11, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["AI in Agriculture"],
+                "why_in_news": "The Ministry of Agriculture signed an agreement to deploy generative AI-powered chatbot services on WhatsApp to deliver custom agricultural advice.",
+                "news_summary": "The WhatsApp-based chatbot responds to photo and voice queries in regional languages, providing farmers with advice on pest control, weather changes, and market prices.",
+                "core_tech": "<b>Retrieval-Augmented Generation (RAG):</b> Optimizes LLM outputs by fetching verified information from trusted government databases before generating responses, reducing the risk of incorrect answers.<br><br><b>Analogy:</b> It acts like an open-book test helper who reads your question, references the official textbook, and writes a verified answer for you.",
+                "prelims_notes": "<b>WhatsApp chatbot:</b> Built on RAG-augmented language models to ensure accurate advisory services.<br><b>Integration:</b> Links to ICAR databases and PM-Kisan portal updates.",
+                "prelims_traps": "RAG-augmented chatbots generate random answers from open web forums without any verification (False, they retrieve data from specific, trusted databases to ensure accuracy).",
+                "relevance_india": "<b>Economic:</b> Bridges research institutions and farmers directly, delivering timely advisory services without requiring complex apps.",
+                "challenges_risks": "Ensuring the generative AI chatbot provides safe, verified pesticide dosages and planting instructions.",
+                "gov_initiatives": "Digital Agriculture Mission, PM Kisan Scheme updates.",
+                "mains_value_add": "<b>Keywords:</b> Retrieval-Augmented Generation, Conversational AI, Agricultural Extension, Mobile Advisory.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The integration of Retrieval-Augmented Generation (RAG) in agricultural AI chatbots is used to:<br>(a) Accelerate processing speed.<br>(b) Fetch verified, contextually accurate answers from official databases to prevent hallucination.<br>(c) Protect user phone numbers.<br>(d) Translate documents offline.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze how mobile-based conversational AI can improve the scale and effectiveness of agricultural extension services in India.",
+                "one_page_revision": "<b>What:</b> WhatsApp AI Agricultural Chatbot.<br><b>Tech:</b> RAG-augmented LLM to prevent incorrect answers.<br><b>Benefit:</b> Direct agricultural advisory in regional languages.",
+                "interview_questions": "How can conversational AI help bridge the information gap for marginal and illiterate farmers?"
+            },
+            {
+                "id": 35,
+                "category": "Agriculture",
+                "title": "ICAR Finalizes Smart Nanotech Seed Coating Technology to Improve Crop Resiliency",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Biotechnology"],
+                "why_in_news": "The Indian Council of Agricultural Research (ICAR) completed field trials for an advanced, indigenous nanotechnology seed-coating system.",
+                "news_summary": "The coating uses biodegradable nano-polymers to deliver precise micro-nutrients and bio-pesticides, protecting seedlings during initial germination from drought and pests.",
+                "core_tech": "<b>Nano-encapsulation:</b> Enclosing micronutrients or active bio-pesticides within nanoscale biodegradable shells, releasing them gradually as the seed germinates.<br><br><b>Analogy:</b> It acts like a time-release capsule that delivers nutrients slowly as the seedling grows, rather than dissolving all at once in the first rain.",
+                "prelims_notes": "<b>ICAR:</b> Indian Council of Agricultural Research, coordinating agricultural education and research.<br><b>Nanotechnology:</b> Manipulation of matter on an atomic and molecular scale (1-100 nanometers).",
+                "prelims_traps": "Nanotech seed coatings modify the DNA of plants to make them genetically modified (False, they act as external protective shields and nutrient delivery systems, not genetic modifications).",
+                "relevance_india": "<b>Economic:</b> Improves seedling survival rates in rain-fed agricultural regions, supporting food production stability.",
+                "challenges_risks": "Lowering production costs of nanotech coatings to make them affordable for smallholder farmers.",
+                "gov_initiatives": "National Mission on Sustainable Agriculture (NMSA), PM Krishi Sinchayee Yojana.",
+                "mains_value_add": "<b>Keywords:</b> Nano-encapsulation, Biodegradable Polymers, Seed Resiliency, Sustainable Biotech.",
+                "upsc_questions": "<b>Prelims MCQ:</b> In seed biotechnology, 'nano-encapsulation' is primarily used to:<br>(a) Genetically modify plant structures.<br>(b) Deliver targeted micro-nutrients and bio-pesticides gradually during germination.<br>(c) Increase seed storage size physically.<br>(d) Eliminate the need for soil planting.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss the potential and environmental safety aspects of deploying nanotechnology and biotechnology applications in Indian agriculture.",
+                "one_page_revision": "<b>What:</b> ICAR Smart Nanotech Seed Coating.<br><b>Tech:</b> Nano-encapsulation using biodegradable polymers.<br><b>Impact:</b> Protects germinating seeds from early drought and pests.",
+                "interview_questions": "How can nanotechnology help reduce the overuse of chemical fertilizers and pesticides in India?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF EARTH SCIENCES
+            // -------------------------------------------------------------
+            {
+                "id": 36,
+                "category": "Earth Sciences",
+                "title": "Ministry of Earth Sciences Upgrades Regional Meteorological Centres with Advanced Doppler Radars",
+                "pib_source_date": "June 5, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Weather Technology", "Forecasting"],
+                "why_in_news": "The Ministry of Earth Sciences modernized Regional Meteorological Centres by installing new, indigenous X-Band Doppler Weather Radars.",
+                "news_summary": "The radar upgrades improve short-range weather tracking, helping meteorologists monitor and issue early warnings for localized severe weather, heavy rainfall, and flash floods.",
+                "core_tech": "<b>Doppler Frequency-Shift:</b> Measures changes in the frequency of returning radar waves to calculate how fast precipitation particles are moving toward or away from the radar, tracking storm rotation.<br><br><b>Analogy:</b> It acts like tracking the pitch change of a passing ambulance siren, using the shift in sound to calculate how fast the vehicle is moving.",
+                "prelims_notes": "<b>IMD:</b> India Meteorological Department, operating under the Ministry of Earth Sciences.<br><b>X-Band Radar:</b> Operates on higher frequencies (8-12 GHz), offering high-resolution imaging for localized short-range (up to 100 km) weather tracking.",
+                "prelims_traps": "Doppler radars can only track rain volume and cannot calculate wind speed or storm rotation (False, they use frequency shift to measure velocity, tracking wind and rotation).",
+                "relevance_india": "<b>Strategic:</b> Saves lives and protects infrastructure by providing timely, accurate warnings for extreme, sudden cloudbursts in mountainous regions.",
+                "challenges_risks": "Calibrating radar signals in mountainous terrains with high topographical interference.",
+                "gov_initiatives": "Mission Mausam meteorological modernization programs.",
+                "mains_value_add": "<b>Keywords:</b> Doppler Frequency-Shift, X-Band Resolution, Extreme Weather Warning, Meteorological Sovereignty.",
+                "upsc_questions": "<b>Prelims MCQ:</b> X-Band Doppler radars are preferred for mountainous terrains because:<br>(a) They have longer signal ranges than S-Band radars.<br>(b) They utilize high-frequency signals, offering excellent resolution for localized, short-range cloud tracking.<br>(c) They require no electrical power.<br>(d) They operate only in deep snow conditions.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Evaluate the importance of localized weather forecasting systems in improving disaster preparedness and mitigating urban flood risks.",
+                "one_page_revision": "<b>What:</b> Met Centre radar modernization.<br><b>Tech:</b> X-Band Doppler Weather Radars (8-12 GHz).<br><b>Benefit:</b> Precise short-range early warnings for cloudbursts and flash floods.",
+                "interview_questions": "How can meteorological departments improve their communication strategies to ensure warnings reach remote rural populations?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF EDUCATION
+            // -------------------------------------------------------------
+            {
+                "id": 37,
+                "category": "Education",
+                "title": "Ministry of Education Launches Nominations for Prime Minister Research Chair (PMRC) Scheme",
+                "pib_source_date": "June 2, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-II",
+                "themes": ["Research", "Innovation"],
+                "why_in_news": "The Ministry of Education opened nominations for the Prime Minister Research Chair (PMRC) Scheme to attract globally recognized scientists to Indian universities.",
+                "news_summary": "The scheme offers well-funded research positions and lab resources to leading researchers, aiming to accelerate domestic R&D across critical domains like Quantum, AI, and Advanced Materials.",
+                "core_tech": "<b>Advanced R&D Infrastructure:</b> Providing high-performance labs, cleanrooms, and computational resources to support cutting-edge scientific research.<br><br><b>Analogy:</b> Shifting from learning from textbooks to setting up your own state-of-the-art laboratory to discover and design new technologies.",
+                "prelims_notes": "<b>PMRC:</b> Prime Minister Research Chair Scheme, aiming to build research capacity in Indian universities.<br><b>Linkage:</b> Coordinates with the Anusandhan National Research Foundation (ANRF).",
+                "prelims_traps": "The PMRC scheme is open only to primary school science teachers for general training (False, it is designed for world-class researchers to lead advanced scientific research chairs).",
+                "relevance_india": "<b>Economic:</b> Brings global expertise to Indian research institutions, helping build local research capacity and reduce the brain drain.",
+                "challenges_risks": "Providing long-term, simplified research funding models that bypass bureaucratic delays.",
+                "gov_initiatives": "Anusandhan National Research Foundation (ANRF) Act, PMRF (Prime Minister's Research Fellowship) expansions.",
+                "mains_value_add": "<b>Keywords:</b> Brain Circulation, R&D Ecosystem, Intellectual Capital, Scientific Sovereignty.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The newly established Anusandhan National Research Foundation (ANRF) is chaired by whom?<br>(a) Union Minister of Science & Tech.<br>(b) Prime Minister of India.<br>(c) Principal Scientific Adviser.<br>(d) President of India.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Analyze the structural steps needed to build world-class research universities and incentivize scientific innovation in India.",
+                "one_page_revision": "<b>What:</b> PMRC Scheme nominations.<br><b>Objective:</b> Establish well-funded research chairs at leading Indian universities.<br><b>Focus Domains:</b> Quantum, AI, Advanced Materials.",
+                "interview_questions": "How can India attract its top scientific talent working abroad back to domestic research institutions?"
+            },
+            {
+                "id": 38,
+                "category": "Education",
+                "title": "India and France Launch 'Bharat Innovates' Joint Deep-Tech Startup Incubation Platform",
+                "pib_source_date": "June 12, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-II & GS-III",
+                "themes": ["Startup Ecosystem", "Deep Tech", "India–France Innovation"],
+                "why_in_news": "Under the 'Bharat Innovates' program, India and France launched a joint incubator to support deep-tech startups working on green energy, biotechnology, and advanced computing.",
+                "news_summary": "The joint initiative provides startups from both nations with access to co-working facilities, pilot test environments, regulatory guidance, and international venture capital networks.",
+                "core_tech": "<b>Cross-Border Tech Incubation:</b> Creating shared acceleration pathways, testing sandboxes, and IP licensing frameworks between collaborating countries.<br><br><b>Analogy:</b> Creating a shared global campus where engineers from both countries can collaborate, test, and market their innovations internationally.",
+                "prelims_notes": "<b>Bharat Innovates:</b> Bilateral deep-tech incubator program with France.<br><b>Thematic Areas:</b> Climate tech, green hydrogen, precision medicine, and AI.",
+                "prelims_traps": "Bharat Innovates is a joint defense procurement program designed to buy imported military jets (False, it is a civilian deep-tech startup incubator and innovation sharing platform).",
+                "relevance_india": "<b>Economic:</b> Helps Indian deep-tech startups enter European markets while sharing scientific expertise between both nations.",
+                "challenges_risks": "Managing cross-border patent filings, IP rights protection, and differing international regulatory standards.",
+                "gov_initiatives": "Startup India, bilateral Science & Technology cooperation treaties.",
+                "mains_value_add": "<b>Keywords:</b> Bilateral Innovation, Deep-tech Scaling, Green Transition, IP Sharing.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The 'Bharat Innovates' joint deep-tech platform is a collaborative startup initiative between India and:<br>(a) Japan.<br>(b) Germany.<br>(c) France.<br>(d) USA.<br><i>Ans: (c)</i><br><br><b>Mains:</b> Assess the role of bilateral technological partnerships in accelerating the commercialization of clean energy and biotechnology solutions.",
+                "one_page_revision": "<b>What:</b> Bharat Innovates platform launch.<br><b>Partner Country:</b> France.<br><b>Focus:</b> Deep tech startups in green energy and advanced computing.",
+                "interview_questions": "What are the primary challenges Indian startups face when trying to scale their tech products in European markets?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF ENVIRONMENT
+            // -------------------------------------------------------------
+            {
+                "id": 39,
+                "category": "Environment",
+                "title": "National Zoological Park Launches 'NZP Saathi' App for Interactive Conservation Education",
+                "pib_source_date": "June 7, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Digital Conservation"],
+                "why_in_news": "The National Zoological Park in Delhi launched the 'NZP Saathi' mobile application to provide interactive environmental and conservation education.",
+                "news_summary": "The app integrates interactive maps, QR code details, and audio-visual guides on endangered species, promoting environmental conservation awareness among visitors.",
+                "core_tech": "<b>Location-Based APIs:</b> Uses geolocation and QR tags to deliver targeted conservation data to users based on their physical position.<br><br><b>Analogy:</b> An automated, smart tour guide that knows exactly where you are standing and shares stories about the animals nearby.",
+                "prelims_notes": "<b>NZP Saathi:</b> Educational conservation app launched by Delhi Zoo.<br><b>Central Zoo Authority:</b> Statutory body under the Ministry of Environment, Forest and Climate Change.",
+                "prelims_traps": "NZP Saathi is a surveillance application used to track wildlife migrations in deep forests (False, it is an interactive educational app designed for visitors at the National Zoological Park).",
+                "relevance_india": "<b>Social:</b> Bridges public recreation and environmental education, raising awareness on biodiversity conservation.",
+                "challenges_risks": "Ensuring the app remains accessible across diverse mobile operating systems.",
+                "gov_initiatives": "Digital India, wildlife conservation awareness programs.",
+                "mains_value_add": "<b>Keywords:</b> Geolocation Guides, Interactive Education, Conservation Awareness, Digital Zoo Assistants.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The Central Zoo Authority (CZA) is a statutory body established under which Act?<br>(a) Environmental Protection Act, 1986.<br>(b) Wildlife (Protection) Act, 1972.<br>(c) Forest Conservation Act, 1980.<br>(d) Biological Diversity Act, 2002.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Discuss how digital tools and interactive media can be used to improve public engagement in environmental and wildlife conservation.",
+                "one_page_revision": "<b>What:</b> Launch of NZP Saathi app.<br><b>By:</b> Delhi Zoo (NZP) under MoEFCC guidelines.<br><b>Focus:</b> Geolocation and QR-based conservation education for visitors.",
+                "interview_questions": "How can zoos transition from centers of public entertainment to centers of active conservation and research?"
+            },
+            {
+                "id": 40,
+                "category": "Environment",
+                "title": "India and Japan Formalize Joint Crediting Mechanism (JCM) for Low-Carbon Tech Transfers",
+                "pib_source_date": "June 16, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Carbon Markets", "Climate Technology"],
+                "why_in_news": "India and Japan finalized a bilateral agreement to launch the Joint Crediting Mechanism (JCM) for carbon credits and clean energy technology transfers.",
+                "news_summary": "The mechanism enables Japanese private investments in Indian low-carbon projects, sharing verified emission reductions (carbon credits) under Article 6 of the Paris Agreement.",
+                "core_tech": "<b>MRV Systems:</b> Standardized Measurement, Reporting, and Verification protocols that calculate greenhouse gas reductions to issue verifiable carbon credits.<br><br><b>Analogy:</b> It acts like a verified ledger that calculates your exact water savings, rewarding you with certificates that you can sell to others.",
+                "prelims_notes": "<b>JCM:</b> Bilateral carbon trading and technology transfer framework developed by Japan.<br><b>Article 6:</b> Part of the Paris Agreement that enables cooperative approaches and carbon trading.",
+                "prelims_traps": "JCM projects allow Japan to count Indian emission reductions twice without any accounting adjustments (False, JCM requires strict accounting under Article 6 to prevent double-counting of credits).",
+                "relevance_india": "<b>Environmental:</b> Brings advanced, energy-efficient technologies to India's industrial sectors, supporting national emission reduction goals.",
+                "challenges_risks": "Establishing transparent and accurate accounting methods to prevent double-counting of emission reductions.",
+                "gov_initiatives": "Energy Conservation Act updates, Carbon Credit Trading Scheme (CCTS).",
+                "mains_value_add": "<b>Keywords:</b> Joint Crediting Mechanism, Low-carbon tech, MRV Framework, Carbon Offsets.",
+                "upsc_questions": "<b>Prelims MCQ:</b> In international climate negotiations, 'Article 6' of the Paris Agreement primarily deals with:<br>(a) Finance allocation for global damage funds.<br>(b) Cooperative approaches and international carbon market mechanisms.<br>(c) Biodiversity conservation targets.<br>(d) Deforestation monitoring networks.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Explain the working of the Joint Crediting Mechanism (JCM). Assess its potential to help India access advanced clean technologies and meet its carbon emission reduction commitments.",
+                "one_page_revision": "<b>What:</b> India-Japan JCM agreement.<br><b>Framework:</b> Article 6 of the Paris Agreement.<br><b>Benefit:</b> Japanese clean tech investments in exchange for shared carbon credits.",
+                "interview_questions": "How can India build a transparent domestic carbon market that encourages private sector emission cuts?"
+            },
+
+            // -------------------------------------------------------------
+            // MINISTRY OF COAL
+            // -------------------------------------------------------------
+            {
+                "id": 41,
+                "category": "Coal",
+                "title": "Ministry of Coal Finalizes Guidelines to Establish National Coal Trading Exchange",
+                "pib_source_date": "June 9, 2026",
+                "priority": "⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Energy Markets", "Digital Trading"],
+                "why_in_news": "The Ministry of Coal published draft guidelines to set up a unified, digital National Coal Exchange (NCE) to enable transparent market pricing.",
+                "news_summary": "The proposed online exchange allows domestic coal producers, captive mining operators, and commercial buyers to trade coal contracts transparently, improving market pricing.",
+                "core_tech": "<b>Dynamic Spot Market Pricing:</b> Online auction and trading engines that match buy and sell orders in real time based on grade, quantity, and logistics availability.<br><br><b>Analogy:</b> It acts like a stock exchange, but instead of trading company shares, buyers and sellers trade standardized coal cargo contracts.",
+                "prelims_notes": "<b>NCE:</b> National Coal Exchange, designed as a digital trading platform.<br><b>Coal sector reforms:</b> Initiated after opening coal mining to commercial, private developers.",
+                "prelims_traps": "National Coal Exchange completely prohibits private and commercial coal mine owners from participating in bids (False, it is designed specifically to integrate private and commercial mine owners into a single trading market).",
+                "relevance_india": "<b>Economic:</b> Brings market transparency, improves coal distribution efficiency, and ensures fair energy pricing for industrial users.",
+                "challenges_risks": "Managing coal grade variations and matching logistics networks dynamically with online transaction orders.",
+                "gov_initiatives": "SHAKTI policy, single-window coal clearance portal.",
+                "mains_value_add": "<b>Keywords:</b> Spot Market, Price Discovery, Coal Linkage, Energy Market Transparency.",
+                "upsc_questions": "<b>Prelims MCQ:</b> The 'SHAKTI' policy launched by the Ministry of Coal is primarily associated with:<br>(a) Clean coal gasification research.<br>(b) Transparent coal allocation and linkage systems for power companies.<br>(c) Mine safety monitoring drones.<br>(d) Compensation for local forest communities.<br><i>Ans: (b)</i><br><br><b>Mains:</b> Assess the potential impact of a digital National Coal Exchange on improving energy pricing efficiency and resource distribution in India.",
+                "one_page_revision": "<b>What:</b> Draft guidelines for National Coal Exchange.<br><b>Focus:</b> Digital spot-trading platform for coal contracts.<br><b>Goal:</b> Transparent price discovery for commercial mining.",
+                "interview_questions": "How can a transparent coal exchange help resolve coal supply issues for power producers?"
+            },
+            {
+                "id": 42,
+                "category": "Coal",
+                "title": "Government Approves Capital Support for Commercial Coal Gasification Projects",
+                "pib_source_date": "June 18, 2026",
+                "priority": "⭐⭐⭐⭐⭐",
+                "gs": "GS-III",
+                "themes": ["Clean Coal Technology"],
+                "why_in_news": "The Government approved financial capital support for public and private sector commercial-scale coal gasification projects to support clean energy initiatives.",
+                "news_summary": "The funding supports projects converting coal into synthetic gas (syngas), chemical raw materials, and alternative fuels, reducing India’s dependence on imported natural gas and chemicals.",
+                "core_tech": "<b>Surface Coal Gasification:</b> A process that reacts coal with steam and oxygen under high temperatures and pressures to break it down into Carbon Monoxide and Hydrogen (Syngas), filtering out carbon dioxide and ash before combustion.<br><br><b>Analogy:</b> Instead of burning raw coal directly and releasing soot, the process chemically cooks it in a closed chamber to turn it into clean, burnable gas.",
+                "prelims_notes": "<b>Syngas:</b> Synthesis gas, primarily composed of Carbon Monoxide (CO) and Hydrogen (H2).<br><b>Target:</b> National Coal Gasification Mission targets gasifying 100 million tonnes of coal by 2030.",
+                "prelims_traps": "Coal gasification produces only helium gas with zero carbon dioxide emissions (False, it produces synthetic gas, and the carbon dioxide generated can be captured and stored, but is not zero).",
+                "relevance_india": "<b>Strategic:</b> Promotes cleaner industrial utilize-case pathways for domestic coal, reducing imports of natural gas and chemical fertilizers.",
+                "challenges_risks": "High capital costs and substantial clean water requirements for gasification plants.",
+                "gov_initiatives": "National Mission on Coal Gasification, financial incentives for coal gasification projects.",
+                "mains_value_add": "<b>Keywords:</b> Coal Gasification, Syngas, Clean Coal, Carbon Capture, Import Substitution.",
+                "upsc_questions": "<b>Prelims MCQ:</b> 'Syngas', produced during coal gasification, is a mixture of which primary gases?<br>(a) Methane & Nitrogen.<br>(b) Carbon Monoxide & Hydrogen.<br>(c) Carbon Dioxide & Helium.<br>(d) Oxygen & Argon.<br><i>Ans: (b)</i><br><br><b>Mains:</b> What is coal gasification? Evaluate its potential to help India achieve its energy security and clean technology transition goals.",
+                "one_page_revision": "<b>What:</b> Capital support for coal gasification.<br><b>Process:</b> Convert coal into clean Syngas (CO + H2).<br><b>Target:</b> Gasify 100 million tonnes of coal by 2030.",
+                "interview_questions": "How can India balance its clean energy transition goals with its reliance on coal for power?"
             }
         ];
 
-        function renderAllArticles() {
+        // Combine all articles
+        articles.push(...remainingArticles);
+
+        // State variables for filter logic
+        let selectedPriority = 'all';
+        let selectedCategory = 'all';
+
+        // Set up filter buttons on startup
+        function initializeFilters() {
+            const categories = ['all', ...new Set(articles.map(a => a.category))];
+            const filterContainer = document.getElementById('ministry-filters');
+            filterContainer.innerHTML = '';
+
+            categories.forEach(cat => {
+                const button = document.createElement('button');
+                button.id = `cat-${cat}`;
+                button.onclick = () => selectCategory(cat);
+                button.className = `px-3 py-1 text-xs font-bold rounded-full border transition select-none ${
+                    cat === 'all' 
+                    ? 'bg-red-700 text-white border-red-700' 
+                    : 'bg-white text-neutral-700 border-neutral-300 hover:bg-neutral-50'
+                }`;
+                button.innerText = cat.toUpperCase();
+                filterContainer.appendChild(button);
+            });
+        }
+
+        // Toggle priority settings
+        function togglePriorityFilter(prio) {
+            selectedPriority = prio;
+            
+            const btnAll = document.getElementById('pri-all');
+            const btnHigh = document.getElementById('pri-high');
+
+            if (prio === 'all') {
+                btnAll.className = "px-3 py-1 text-xs font-bold rounded-sm bg-neutral-950 text-white border border-neutral-950";
+                btnHigh.className = "px-3 py-1 text-xs font-bold rounded-sm bg-white text-neutral-700 border border-neutral-300 hover:bg-neutral-50";
+            } else {
+                btnAll.className = "px-3 py-1 text-xs font-bold rounded-sm bg-white text-neutral-700 border border-neutral-300 hover:bg-neutral-50";
+                btnHigh.className = "px-3 py-1 text-xs font-bold rounded-sm bg-neutral-950 text-white border border-neutral-950";
+            }
+            filterArticles();
+        }
+
+        // Toggle category choices
+        function selectCategory(cat) {
+            selectedCategory = cat;
+            
+            // Reset standard button styling
+            const buttons = document.querySelectorAll('#ministry-filters button');
+            buttons.forEach(btn => {
+                btn.className = "px-3 py-1 text-xs font-bold rounded-full border bg-white text-neutral-700 border-neutral-300 hover:bg-neutral-50";
+            });
+
+            // Highlight selected button
+            const selectedBtn = document.getElementById(`cat-${cat}`);
+            if (selectedBtn) {
+                selectedBtn.className = "px-3 py-1 text-xs font-bold rounded-full border bg-red-700 text-white border-red-700";
+            }
+            filterArticles();
+        }
+
+        // Reset all active filters
+        function resetFilters() {
+            document.getElementById('search-bar').value = '';
+            selectedPriority = 'all';
+            selectedCategory = 'all';
+            
+            togglePriorityFilter('all');
+            selectCategory('all');
+        }
+
+        // Apply filters and render the results
+        function filterArticles() {
+            const query = document.getElementById('search-bar').value.toLowerCase().trim();
             const container = document.getElementById('news-feed');
             container.innerHTML = '';
 
-            articles.forEach((article) => {
+            const filtered = articles.filter(article => {
+                const matchesSearch = !query || 
+                    article.title.toLowerCase().includes(query) || 
+                    article.why_in_news.toLowerCase().includes(query) || 
+                    article.category.toLowerCase().includes(query) ||
+                    article.themes.some(t => t.toLowerCase().includes(query));
+
+                const matchesPriority = selectedPriority === 'all' || article.priority === '⭐⭐⭐⭐⭐';
+                const matchesCategory = selectedCategory === 'all' || article.category === selectedCategory;
+
+                return matchesSearch && matchesPriority && matchesCategory;
+            });
+
+            document.getElementById('results-count').innerText = `Showing ${filtered.length} of ${articles.length} Dossiers`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 border border-dashed border-neutral-300 rounded-sm">
+                        <p class="text-neutral-500 font-serif text-lg">No matching study dossiers found.</p>
+                        <p class="text-xs text-neutral-400 mt-1">Try resetting the filters or modifying your search query.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(article => {
                 const articleEl = document.createElement('article');
                 articleEl.className = "pb-12 border-b border-neutral-300 last:border-0";
                 
+                // Construct themes as a visual tag list
+                const themeTags = article.themes.map(theme => `
+                    <span class="inline-block bg-neutral-200 text-neutral-800 text-[10px] font-bold uppercase tracking-wide px-2 py-0.5 rounded-sm">
+                        # ${theme}
+                    </span>
+                `).join(' ');
+
                 articleEl.innerHTML = `
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2 text-xs">
-                        <span class="font-bold text-red-700 tracking-wider uppercase text-[10px]">
-                            ${article.category}
-                        </span>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2 text-xs">
+                        <div class="flex items-center gap-2">
+                            <span class="font-bold text-red-700 tracking-wider uppercase text-[10px]">
+                                ${article.category} PORTFOLIO
+                            </span>
+                            <span class="text-neutral-300">|</span>
+                            <span class="text-amber-600 font-bold">${article.priority}</span>
+                        </div>
                         <div class="text-neutral-500 font-medium">
-                            ${article.ministry} &bull; ${article.pib_source_date}
+                            ${article.pib_source_date} &bull; ${article.gs} Linkage
                         </div>
                     </div>
 
@@ -239,113 +1176,83 @@
                         ${article.title}
                     </h3>
 
-                    <p class="text-neutral-800 font-semibold text-sm md:text-base leading-relaxed mb-4">
+                    <p class="text-neutral-800 font-semibold text-sm md:text-base leading-relaxed mb-3">
                         ${article.why_in_news}
                     </p>
 
-                    <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <!-- Control Button -->
-                        <button onclick="toggleUPSCSection(${article.id})" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-neutral-900 border-b-2 border-black hover:text-red-700 hover:border-red-700 pb-0.5 transition select-none">
-                            <span>🔍 Toggle UPSC Exam Pointers</span>
-                            <svg id="arrow-${article.id}" class="w-3. h-3 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-
-                        <!-- Direct Original Source Link -->
-                        <a href="${article.original_pib_url}" target="_blank" rel="noopener noreferrer" class="text-xs text-red-700 hover:underline font-bold inline-flex items-center gap-1">
-                            <span>🔗 View Original PIB Release</span>
-                        </a>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        ${themeTags}
                     </div>
 
-                    <!-- UPSC DETAILED NOTEBOOK LAYER -->
-                    <div id="upsc-card-${article.id}" class="mt-4 bg-stone-100 border border-neutral-300 rounded-sm p-5 font-sans text-neutral-800 space-y-6 shadow-inner">
+                    <div class="flex flex-wrap items-center gap-4 mb-6">
+                        <button onclick="toggleUPSCSection(${article.id})" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-neutral-900 border-b-2 border-black hover:text-red-700 hover:border-red-700 pb-0.5 transition select-none">
+                            <span>🔍 Toggle UPSC Exam Pointers</span>
+                            <svg id="arrow-${article.id}" class="w-3 h-3 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+
+                    <!-- UPSC ANALYTICAL NOTEBOOK LAYER -->
+                    <div id="upsc-card-${article.id}" class="mt-4 bg-stone-100 border border-neutral-300 rounded-sm p-5 font-sans text-neutral-800 space-y-6 shadow-inner hidden">
                         
                         <!-- TAB NAVIGATION -->
                         <div class="flex flex-wrap gap-2 border-b border-neutral-300 pb-2">
-                            <button onclick="switchTab(${article.id}, 'overview')" id="tab-${article.id}-overview" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 border-b-2 border-red-700 text-red-700">1. Overview & Tech</button>
-                            <button onclick="switchTab(${article.id}, 'relevance')" id="tab-${article.id}-relevance" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">2. Relevance & Gov</button>
-                            <button onclick="switchTab(${article.id}, 'analysis')" id="tab-${article.id}-analysis" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">3. Mains Value & Qs</button>
-                            <button onclick="switchTab(${article.id}, 'revision')" id="tab-${article.id}-revision" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">4. Quick Sheet</button>
+                            <button onclick="switchTab(${article.id}, 'overview')" id="tab-${article.id}-overview" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 border-b-2 border-red-700 text-red-700">1. Context & Tech</button>
+                            <button onclick="switchTab(${article.id}, 'relevance')" id="tab-${article.id}-relevance" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">2. Prelims & Value</button>
+                            <button onclick="switchTab(${article.id}, 'analysis')" id="tab-${article.id}-analysis" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">3. Mains & Analysis</button>
+                            <button onclick="switchTab(${article.id}, 'questions')" id="tab-${article.id}-questions" class="tab-btn-${article.id} text-xs font-bold uppercase px-3 py-1 text-neutral-500 hover:text-neutral-900">4. Mock Questions</button>
                         </div>
 
-                        <!-- TAB CONTENT 1: OVERVIEW -->
+                        <!-- TAB CONTENT 1: CONTEXT & TECH -->
                         <div id="content-${article.id}-overview" class="tab-content-${article.id} space-y-4">
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">Syllabus Linkage</span>
-                                <p class="text-xs font-semibold text-neutral-950">${article.syllabus_mapping}</p>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">UPSC Syllabus Integration</span>
+                                <p class="text-xs font-semibold text-neutral-950">${article.gs} &bull; ${article.category} Schemes and Industrial Modernization.</p>
                             </div>
                             <div>
                                 <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">1. News Summary</span>
                                 <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.news_summary}</p>
                             </div>
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">2. Core Technology Explained</span>
-                                <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.core_tech}</p>
-                            </div>
-                            <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">3. Background & Evolution</span>
-                                <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.background_evolution}</p>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">2. Core Technology Principles</span>
+                                <p class="text-xs text-neutral-800 leading-relaxed mt-1 bg-white p-3 border border-neutral-200 rounded-sm">${article.core_tech}</p>
                             </div>
                         </div>
 
-                        <!-- TAB CONTENT 2: RELEVANCE & GOV -->
+                        <!-- TAB CONTENT 2: PRELIMS & VALUE -->
                         <div id="content-${article.id}-relevance" class="tab-content-${article.id} hidden space-y-4">
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">4. UPSC Prelims Notes</span>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">3. High-Yield Prelims Pointers</span>
                                 <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.prelims_notes}</p>
                             </div>
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">5. Relevance for India</span>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">4. Strategic Relevance for India</span>
                                 <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.relevance_india}</p>
                             </div>
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">6. Challenges and Risks</span>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">5. Value-Addition Keywords & Data</span>
+                                <p class="text-xs text-neutral-800 italic mt-1 bg-white p-2 border border-neutral-200 rounded-xs">"${article.mains_value_add}"</p>
+                            </div>
+                        </div>
+
+                        <!-- TAB CONTENT 3: MAINS & ANALYSIS -->
+                        <div id="content-${article.id}-analysis" class="tab-content-${article.id} hidden space-y-4">
+                            <div>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">6. Technical Challenges and Risks</span>
                                 <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.challenges_risks}</p>
                             </div>
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">7. Government Initiatives</span>
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">7. Government Initiatives</span>
                                 <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.gov_initiatives}</p>
                             </div>
                         </div>
 
-                        <!-- TAB CONTENT 3: ANALYSIS & QUESTIONS -->
-                        <div id="content-${article.id}-analysis" class="tab-content-${article.id} hidden space-y-4">
+                        <!-- TAB CONTENT 4: MOCK QUESTIONS -->
+                        <div id="content-${article.id}-questions" class="tab-content-${article.id} hidden space-y-4">
                             <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">8. International Dimension</span>
-                                <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.intl_dimension}</p>
-                            </div>
-                            <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">9. Mains Value Addition</span>
-                                <div class="bg-white p-3 border border-neutral-300 rounded-sm text-xs space-y-2 mt-1">
-                                    <p>${article.mains_value_add}</p>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">10. Multi-Dimensional & Syllabus Linkage</span>
-                                <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.multidimensional_analysis}</p>
-                            </div>
-                            <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">11. UPSC Mock Questions</span>
-                                <div class="bg-stone-200/60 p-3 border border-neutral-300 rounded-sm text-xs mt-1 space-y-2">
+                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">8. UPSC Mock Exam Questions</span>
+                                <div class="bg-stone-200/60 p-3 border border-neutral-300 rounded-sm text-xs mt-1 space-y-3">
                                     ${article.upsc_questions}
                                 </div>
-                            </div>
-                        </div>
-
-                        <!-- TAB CONTENT 4: QUICK SHEET -->
-                        <div id="content-${article.id}-revision" class="tab-content-${article.id} hidden space-y-4">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div class="bg-white p-3 border border-neutral-200 rounded-sm">
-                                    <span class="text-[9px] font-bold uppercase tracking-widest text-red-700">One-Page Revision Sheet</span>
-                                    <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.one_page_revision}</p>
-                                </div>
-                                <div class="bg-white p-3 border border-neutral-200 rounded-sm">
-                                    <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">UPSC Exam Verdict</span>
-                                    <p class="text-xs text-neutral-800 leading-relaxed mt-1">${article.exam_verdict}</p>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="text-[9px] font-bold uppercase tracking-widest text-neutral-500">Interview Discussion Areas</span>
-                                <p class="text-xs text-neutral-850 italic mt-1 bg-white p-2 border border-neutral-200 rounded-xs">"${article.interview_questions}"</p>
                             </div>
                         </div>
 
@@ -355,7 +1262,7 @@
             });
         }
 
-        // Accordion Controls
+        // Accordion toggle controllers
         function toggleUPSCSection(id) {
             const upscCard = document.getElementById(`upsc-card-${id}`);
             const arrow = document.getElementById(`arrow-${id}`);
@@ -368,52 +1275,28 @@
             }
         }
 
-        // Global multi-toggle
-        let allOpen = true;
-        function toggleAllUPSC() {
-            allOpen = !allOpen;
-            articles.forEach(article => {
-                const upscCard = document.getElementById(`upsc-card-${article.id}`);
-                const arrow = document.getElementById(`arrow-${article.id}`);
-                if (allOpen) {
-                    upscCard.classList.remove('hidden');
-                    arrow.classList.add('rotate-180');
-                } else {
-                    upscCard.classList.add('hidden');
-                    arrow.classList.remove('rotate-180');
-                }
-            });
-        }
-
-        // Tab Switching Logic inside Each Accordion
+        // Tab switches inside each active folder
         function switchTab(articleId, tabName) {
-            // Hide all contents for this article
             const contents = document.querySelectorAll(`.tab-content-${articleId}`);
             contents.forEach(content => content.classList.add('hidden'));
 
-            // Show selected content
             document.getElementById(`content-${articleId}-${tabName}`).classList.remove('hidden');
 
-            // Reset tab button styles
             const buttons = document.querySelectorAll(`.tab-btn-${articleId}`);
             buttons.forEach(btn => {
                 btn.classList.remove('border-b-2', 'border-red-700', 'text-red-700');
                 btn.classList.add('text-neutral-500');
             });
 
-            // Highlight selected button
             const activeBtn = document.getElementById(`tab-${articleId}-${tabName}`);
             activeBtn.classList.remove('text-neutral-500');
             activeBtn.classList.add('border-b-2', 'border-red-700', 'text-red-700');
         }
 
+        // Start running the scripts on load
         window.addEventListener('DOMContentLoaded', () => {
-            renderAllArticles();
-            // Default arrows to open matches the configured visual state
-            articles.forEach(article => {
-                const arrow = document.getElementById(`arrow-${article.id}`);
-                if (arrow) arrow.classList.add('rotate-180');
-            });
+            initializeFilters();
+            filterArticles();
             document.getElementById('current-date').innerText = new Date().toLocaleDateString('en-US', {
                 weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
             });
